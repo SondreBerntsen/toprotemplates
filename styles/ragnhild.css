@@ -119,4 +119,16 @@ footer .footerSection {
 }
 
 /***End - footer***/
+/***Service page***/
+.serviceArticle {
+  background-color: gray;
+  height: 600px;
+}
+
+.sideNavbar {
+  background-color: yellow;
+  height: 600px;
+}
+
+/***End - Service page***/
 /*# sourceMappingURL=ragnhild.css.map */
