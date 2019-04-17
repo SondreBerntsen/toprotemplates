@@ -1,1 +1,122 @@
-/* No CSS *//*# sourceMappingURL=ragnhild.css.map */
+@charset "UTF-8";
+/*Dette er ikke ferdig. Skal fikse koden slik at den ser mer ryddig ut. peace Y*/
+/*Må lage varibaler til farger, skriftstørrelser, eventuelt avstander*/
+/*FIX Noen JS greier funker ikke i Exlporer*/
+/*Tjeneste greia ser litt funky ut responsiv*/
+/*Searchbar trenger en real FFFFIIIXXX*/
+/***Masse rot***/
+.logoImg {
+  height: 50px;
+}
+
+.iconSearch {
+  height: 30px;
+  cursor: pointer;
+}
+
+.navbarLink {
+  color: black !important;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.navbar li {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.txtHeader {
+  width: 700px;
+}
+
+.searchbar {
+  width: 100%;
+  padding: 10px;
+  background-color: #e2e2e2;
+}
+
+.searchbar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/***End - masse rot***/
+/***Front page***/
+.servicesSection {
+  padding-top: 30px;
+}
+
+.servicesSection .serviceCatSection {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.servicesSection .serviceCatSection .catDescr {
+  width: 350px;
+  min-height: 150px;
+  margin: auto;
+}
+
+.servicesSection .serviceCatSection .catDescr .serviceHeading {
+  font-size: 20px;
+}
+
+.servicesSection .serviceCatSection .btnService {
+  width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #192E60;
+  color: white;
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.totalDeliverySection {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e2e2e2;
+  text-align: center;
+}
+
+.totalDeliverySection .totaldeliveryTxt {
+  margin: auto;
+  padding: 20px;
+  max-width: 900px;
+}
+
+.newsSection .newsArticleSection:hover {
+  cursor: pointer;
+}
+
+.newsSection .newsArticleSection .newsThumbnail {
+  width: 100%;
+}
+
+/***End - front page***/
+/***Footer***/
+footer {
+  margin-top: 30px;
+  width: 100%;
+  min-height: 150px;
+  background-color: #192E60;
+  color: white;
+  padding: 30px;
+}
+
+footer .footerSection {
+  padding: 20px;
+}
+
+/***End - footer***/
+/*# sourceMappingURL=ragnhild.css.map */

@@ -11,11 +11,12 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/ragnhild.css">
     <title>Topro Elektronikk</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"><img class="logoImg" src="images/logo.PNG" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
             aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,20 +27,26 @@
                 <li class="nav-item">
                     <a class="nav-link navbarLink" href="index.html">Hjem</a>
                 </li>
-                <li class="nav-item">
-                    <div class="dropdown show">
-                        <a class=" btn btn-lg dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Tjenester
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="tjeneste.html">tjeneste</a>
-                            <a class="dropdown-item" href="tjeneste.html">tjeneste</a>
-                        </div>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navbarLink" href="#" id="serviceDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tjenester
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="serviceDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Rådgiving</a>
+                        <a class="dropdown-item" href="#">Ekspertise og erfaringer</a>
+                        <a class="dropdown-item" href="#">Prototype</a>
+                        <a class="dropdown-item" href="#">Tilretteleggelse for serieproduksjon</a>
+                        <a class="dropdown-item" href="#">Kredskortproduksjon</a>
+                        <a class="dropdown-item" href="#">Elektromekanisk sammenstilling</a>
+                        <a class="dropdown-item" href="#">Testing</a>
+                        <a class="dropdown-item" href="#">Innkjøp</a>
+                        <a class="dropdown-item" href="#">Lager</a>
+                        <a class="dropdown-item" href="#">Logistikk</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbarLink" href="kundehistorier.html">Kundehistorier</a>
+                    <a class="nav-link navbarLink" href="kundehistorier.html"> Kundehistorier </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link navbarLink" href="karriere.html">Karriere</a>
@@ -47,52 +54,166 @@
                 <li class="nav-item">
                     <a class="nav-link navbarLink" href="nyheter.html">Nyheter</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link navbarLink" href="omoss.html">Om oss</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navbarLink" href="#" id="aboutDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Om oss
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutDropdownMenuLink">
+                        <a class="dropdown-item" href="omoss.html">Historie</a>
+                        <a class="dropdown-item" href="omoss.html">Miljø og etikk</a>
+                        <a class="dropdown-item" href="omoss.html">Kvalitetssikring</a>
+                        <a class="dropdown-item" href="omoss.html">Samarbeidspartnere</a>
+                        <a class="dropdown-item" href="omoss.html">Sertifiseringer</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link navbarLink" href="english.html">English</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbarLink" href="kontakt.html">Kontakt oss</a>
+                    <a class="nav-link navbarLink" href="kontakt.html">Kontakt</a>
                 </li>
                 <li>
-                    søk fix
+                    <img class="iconSearch" src="images/iconSearch.PNG" class="navbar-toggler" data-toggle="collapse"
+                        data-target="#toggleSearchbar" aria-controls="toggleSearchbar" aria-expanded="false"
+                        aria-label="Toggle navigation" />
                 </li>
             </ul>
         </div>
+
     </nav>
+    <div class="collapse searchbar" id="toggleSearchbar">
+        <form class="form-inline">
+            <input class="form-control " type="search" placeholder="Søk" aria-label="Search">
+            <button class="btn btn-secondary" type="submit">Søk</button>
+        </form>
+    </div>
     <header>
         <div class="txtHeader">
             <h1 class="text-center">Topro elektronikk</h1>
-            <h2 class="text-center">Totalleverandør innen elektronikkproduksjon og elektromekanisk sammenstilling</h2>
+            <h3 class="text-center">Totalleverandør innen elektronikkproduksjon og elektromekanisk sammenstilling</h3>
         </div>
     </header>
     <main>
         <div class="container">
-            her kommer masse kult innhold snart
+            <section class="servicesSection">
+                <h2 class="text-center">Tjenester vi tilbyr</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-xl-4 serviceCatSection">
+                        <img src="images/catlogo1.PNG" alt="hei" />
+                        <div class="catDescr">
+                            <h3 class="serviceHeading">Rådgiving og samarbeidsmuligher</h3>
+                            <p>Vi er totalleverandør av elektronikkproduksjon, våre tjenester innebører
+                                alt
+                                fra rådgiving til sammenstilling av elektromekaniske produkter og serieproduksjon av
+                                kredskort.</p>
+                        </div>
+                        <div class="buttonGroup">
+                            <a href="#" class="btn btnService">Rådgiving</a>
+                            <a href="#" class="btn btnService">Ekspertise og erfaringer</a>
+                            <a href="#" class="btn btnService">Prototype</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  col-xl-4 serviceCatSection">
+                        <img src="images/catlogo1.PNG" alt="hei" />
+                        <div class="catDescr">
+                            <h3 class="serviceHeading">Produksjon</h3>
+                            <p>Vi er totalleverandør av elektronikkproduksjon, våre tjenester innebører
+                                alt
+                                fra rådgiving til sammenstilling av elektromekaniske produkter og serieproduksjon av
+                                kredskort.</p>
+                        </div>
 
+                        <div class="buttonGroup">
+                            <a href="#" class="btn btnService">Tilretteleggelse for serieproduksjon</a>
+                            <a href="#" class="btn btnService">Kretskortproduksjon</a>
+                            <a href="#" class="btn btnService">Elektromekanisk sammenstilling</a>
+                            <a href="#" class="btn btnService">Testing</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  col-xl-4 serviceCatSection">
+                        <img src="images/catlogo1.PNG" alt="hei" />
+                        <div class="catDescr">
+                            <h3 class="serviceHeading">Innkjøp, lager og produksjon</h3>
+                            <p>Vi er totalleverandør av elektronikkproduksjon, våre tjenester innebører
+                                alt
+                                fra rådgiving til sammenstilling av elektromekaniske produkter og serieproduksjon av
+                                kredskort.</p>
+                        </div>
+                        <div class="buttonGroup">
+                            <a href="#" class="btn btnService">Innkjøp</a>
+                            <a href="#" class="btn btnService">Lager</a>
+                            <a href="#" class="btn btnService">Logistikk</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+        <section class="totalDeliverySection">
+            <div class="container">
+                <h2 class="text-center">Totalleveranse</h2>
+                <h3 class="text-center">Topro Elektronikk er din samarbeidspartner hele veien!</h3>
+                <p class="totaldeliveryTxt">Vi kan hjelpe deg fra ide til ferdig produkt, og videre! Vi har brukt flere
+                    år på å bygge opp vår
+                    kunnskap og erfaringer innenfor elektronikkmarkedet og kan derfor tilby et samarbeid fra A ti Å. Vi
+                    har et bredt utvalg av tjenster og et stort nettverk av bedriftsvenner som kan hjelpe med alt fra
+                    programvareutvikling til markedsstrategi.</p>
+                <img class="img-fluid" src="images/totalDeliveryImg.PNG" />
+                <p class="totaldeliveryTxt">Kontakt oss for en hyggelig prat. Vi invterer gjerne på besøk for en
+                    omvisning hos oss om ønskelig.
+                    Her vil du kunne møte folk fra alle våre avdelinger som kan sare på alt du måtte lure på.
+                    Kundetilfredshet er vår høyeste prioritet, så ikke nøl med å spørre! Se tidligere prosjekter vi har
+                    vært med på.</p>
+                <button class="btn btn-success btn-lg">Kontakt oss</button>
+            </div>
+        </section>
+        <section class="valuesSection">
+            <h2 class="text-center">Våre verdier</h2>
+        </section>
+        <section class="newsSection">
+            <div class="container">
+                <h2 class="text-center">Nyheter</h2>
+                <div class="row">
+                    <section class="newsArticleSection col-md-4">
+                        <img class="img-fluid newsThumbnail" src="images/newsImg.PNG" /><br>
+                        <strong>Topro havner i avisen igjen!</strong>
+                        <p>Vi har vært i aisen, der ble vi nevnt i forhold til vårt syn på miljø og etikk.</p>
+                    </section>
+                    <section class="newsArticleSection col-md-4">
+                        <img class="img-fluid newsThumbnail" src="images/newsImg.PNG" /><br>
+                        <strong>Topro havner i avisen igjen!</strong>
+                        <p>Vi har vært i aisen, der ble vi nevnt i forhold til vårt syn på miljø og etikk.</p>
+                    </section>
+                    <section class="newsArticleSection col-md-4">
+                        <img class="img-fluid newsThumbnail" src="images/newsImg.PNG" /><br>
+                        <strong>Topro havner i avisen igjen!</strong>
+                        <p>Vi har vært i aisen, der ble vi nevnt i forhold til vårt syn på miljø og etikk.</p>
+                    </section>
+                </div>
+            </div>
+        </section>
     </main>
-
     <footer>
-        <div class="container-fluid">
-            <div class="row margin ">
-                <div class="col-md-4">
-                    <h3>om oss</h3>
-                    <p>hallo</p>
-                    <p>hallo</p>
-                    <p>hallo</p>
+        <div class="container">
+            <div class="row">
+                <div class="footerSection col-md-4">
+                    <h4>Kontakt oss</h4>
+                    <p>Vi er alltid klar for en uforpliktende samtale, eller uansett spørsmål du kan tenke deg til.</p>
+                    <button class="btn btn-outline-light">Kontakt oss</button>
+
                 </div>
-                <div class="col-md-4">
-                    <h3>om oss</h3>
-                    <p>hallo</p>
-                    <p>hallo</p>
-                    <p>hallo</p>
+                <div class=" footerSection col-md-4">
+                    <h4>Nyheter</h4>
+                    <p>Topro havner i avisen igjen!</p>
+                    <p>Kjempe gøy nyhet</p>
+                    <p>Dette må du lese!</p>
                 </div>
-                <div class="col-md-4">
-                    <h3>om oss</h3>
-                    <p>hallo</p>
+                <div class=" footerSection col-md-4">
+                    <h4>Følg oss</h4>
+                    <div class="row">
+                        <img src="images/facebook.png" />
+                        <img src="images/facebook.png" />
+                        <img src="images/facebook.png" />
+                    </div>
                 </div>
             </div>
         </div>

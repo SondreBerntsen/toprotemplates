@@ -16,9 +16,12 @@ body main {
 }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 30, 78, 0.589)), to(rgba(7, 30, 78, 0.589))), url(../images/headerImg.jpg);
-  background: linear-gradient(rgba(7, 30, 78, 0.589), rgba(7, 30, 78, 0.589)), url(../images/headerImg.jpg);
-  height: 350px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 30, 78, 0.589)), to(rgba(7, 30, 78, 0.589))), url(../images/headerImg2.jpg);
+  background: linear-gradient(rgba(7, 30, 78, 0.589), rgba(7, 30, 78, 0.589)), url(../images/headerImg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
