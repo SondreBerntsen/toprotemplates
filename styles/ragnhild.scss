@@ -1,4 +1,4 @@
-/*Dette er ikke ferdig. Skal fikse koden slik at den ser mer ryddig ut. peace Y*/
+/*Dette er ikke ferdig. Skal fikse koden slik at den ser mer ryddig ut.*/
 /*Må lage varibaler til farger, skriftstørrelser, eventuelt avstander*/
 /*FIX Noen JS greier funker ikke i Exlporer*/
 /*Tjeneste greia ser litt funky ut responsiv*/
@@ -105,12 +105,57 @@ footer{
 /***End - footer***/
 
 /***Service page***/
+.serviceContainer{
+ margin-top:50px;
+ padding: 20px;
+}
 .serviceArticle{
-  background-color: gray;
-  height: 600px;
+
 }
-.sideNavbar{
-  background-color: yellow;
-  height: 600px;
-}
+
 /***End - Service page***/
+
+/***Sidebar***/
+.sideNavbar{
+  background-color: #e2e2e2;
+  padding-bottom: 20px;
+  .sidebarHeading{
+    background-color:#192E60; 
+    color:white;
+    padding:20px;
+  }
+  .sidebarContent{
+    .sidebarTitle{
+      padding: 5px;
+      padding-left: 20px;
+    }
+    .sidebarLink{
+      display: block;
+      color:black;
+      padding: 5px;
+      padding-left: 25px;
+      &:hover{
+        text-decoration: none;
+        background-color: lightgray;
+      }
+    }
+  }
+}
+/***End - Sidebar***/
+
+/***Contact persons***/
+.contactSection{
+  margin-top: 20px;
+}
+.contactPerson{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  .contactImg{
+    border-radius: 50%;
+  }
+  .contactInfo{
+    
+  }
+}
