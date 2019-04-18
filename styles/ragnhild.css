@@ -95,6 +95,10 @@
   max-width: 900px;
 }
 
+.newsSection .newsArticleSection {
+  position: relative;
+}
+
 .newsSection .newsArticleSection:hover {
   cursor: pointer;
 }
@@ -123,6 +127,10 @@ footer .footerSection {
 .serviceContainer {
   margin-top: 50px;
   padding: 20px;
+}
+
+.serviceArticle {
+  line-height: 1.8;
 }
 
 /***End - Service page***/
@@ -176,5 +184,22 @@ footer .footerSection {
 
 .contactPerson .contactImg {
   border-radius: 50%;
+}
+
+/***News page***/
+.firstNewsSection {
+  margin-bottom: 30px;
+}
+
+.firstNewsThumbnail {
+  width: 100%;
+}
+
+.dateNewsArticle {
+  background-color: #e2e2e2;
+  padding: 10px;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
 }
 /*# sourceMappingURL=ragnhild.css.map */

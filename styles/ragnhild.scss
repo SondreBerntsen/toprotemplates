@@ -80,6 +80,7 @@
 }
 .newsSection{
   .newsArticleSection{
+    position: relative;
     &:hover {
       cursor: pointer;
     }
@@ -110,7 +111,7 @@ footer{
  padding: 20px;
 }
 .serviceArticle{
-
+  line-height: 1.8;
 }
 
 /***End - Service page***/
@@ -158,4 +159,20 @@ footer{
   .contactInfo{
     
   }
+}
+
+/***News page***/
+.firstNewsSection{
+  margin-bottom: 30px;
+}
+.firstNewsThumbnail{
+  width: 100%;
+}
+.dateNewsArticle{
+  background-color: #e2e2e2;
+  padding:10px;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  
 }
