@@ -40,12 +40,13 @@
 /***End - masse rot***/
 
 /***Front page***/
+
 .servicesSection{
   padding-top: 30px;
+  margin-bottom: 60px;
   .serviceCatSection{
     text-align: center;
     margin-top: 60px;
-    margin-bottom: 60px;
     .catDescr{
       width: 350px;
       min-height: 150px;
@@ -133,7 +134,7 @@ footer{
     .sidebarLink{
       display: block;
       color:black;
-      padding: 5px;
+      padding: 10px;
       padding-left: 25px;
       &:hover{
         text-decoration: none;

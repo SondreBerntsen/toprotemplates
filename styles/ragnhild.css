@@ -53,12 +53,12 @@
 /***Front page***/
 .servicesSection {
   padding-top: 30px;
+  margin-bottom: 60px;
 }
 
 .servicesSection .serviceCatSection {
   text-align: center;
   margin-top: 60px;
-  margin-bottom: 60px;
 }
 
 .servicesSection .serviceCatSection .catDescr {
@@ -154,7 +154,7 @@ footer .footerSection {
 .sideNavbar .sidebarContent .sidebarLink {
   display: block;
   color: black;
-  padding: 5px;
+  padding: 10px;
   padding-left: 25px;
 }
 
