@@ -16,7 +16,8 @@ body main {
 }
 
 header {
-  background: url(../images/headerImg7.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 30, 78, 0.589)), to(rgba(7, 30, 78, 0.589))), url(../images/headerimg6.jpg);
+  background: linear-gradient(rgba(7, 30, 78, 0.589), rgba(7, 30, 78, 0.589)), url(../images/headerimg6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
