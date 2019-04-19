@@ -16,8 +16,7 @@ body main {
 }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 30, 78, 0.589)), to(rgba(7, 30, 78, 0.589))), url(../images/headerImg2.jpg);
-  background: linear-gradient(rgba(7, 30, 78, 0.589), rgba(7, 30, 78, 0.589)), url(../images/headerImg2.jpg);
+  background: url(../images/headerImg7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -38,5 +37,17 @@ header {
   .container {
     max-width: 1350px;
   }
+}
+
+.headertextmain {
+  font-weight: 500;
+  font-size: 3rem;
+  padding-bottom: 15px;
+}
+
+.headertextsub {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 37.5px;
 }
 /*# sourceMappingURL=main.css.map */
