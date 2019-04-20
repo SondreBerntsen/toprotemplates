@@ -12,6 +12,9 @@
   height: 30px;
   cursor: pointer;
 }
+.navbar{
+  border-bottom: 1px solid gray;
+}
 .navbarLink{
   color:black !important;
 }
@@ -121,9 +124,7 @@ footer{
 .serviceArticle{
   line-height: 1.8;
 }
-.xx{
-  
-}
+
 
 /***End - Service page***/
 
@@ -131,6 +132,7 @@ footer{
 .sideNavbar{
   background-color: #e2e2e2;
   padding-bottom: 20px;
+  
   .sidebarHeading{
     background-color:#192E60; 
     color:white;
@@ -138,8 +140,11 @@ footer{
   }
   .sidebarContent{
     .sidebarTitle{
-      padding: 5px;
+      font-size: 16px;
+      padding-top: 15px;
       padding-left: 20px;
+      padding-right: 20px;
+      
     }
     .sidebarLink{
       display: block;
