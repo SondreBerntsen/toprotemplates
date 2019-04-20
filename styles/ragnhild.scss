@@ -37,9 +37,7 @@
     
   }
 }
-.serviceCatIcon{
-  width: 50px;
-}
+
 /***End - masse rot***/
 
 /***Front page***/
@@ -50,6 +48,9 @@
   .serviceCatSection{
     text-align: center;
     margin-top: 60px;
+    .serviceCatIcon{
+      height: 70px ;
+      }
     .catDescr{
       width: 350px;
       min-height: 150px;

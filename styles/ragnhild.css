@@ -49,10 +49,6 @@
           justify-content: flex-end;
 }
 
-.serviceCatIcon {
-  width: 50px;
-}
-
 /***End - masse rot***/
 /***Front page***/
 .servicesSection {
@@ -63,6 +59,10 @@
 .servicesSection .serviceCatSection {
   text-align: center;
   margin-top: 60px;
+}
+
+.servicesSection .serviceCatSection .serviceCatIcon {
+  height: 70px;
 }
 
 .servicesSection .serviceCatSection .catDescr {
