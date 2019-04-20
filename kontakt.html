@@ -12,6 +12,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/sondre.css">
+    <link rel="stylesheet" href="styles/ragnhild.css">
     <title>Topro Elektronikk</title>
 </head>
     
@@ -90,7 +91,93 @@
     </div>
     <main>
         <div class="container">
-            <h1>kontakt.html</h1>
+            <!-- page title & description -->
+            <h1 class="ContactTitle">Kontakt oss</h1>
+            <p class="contact-description">Vi er alltid klar for en prat, ring oss eller send en epost, uansett hva det skulle være du lurer på. Ta gjerne kontakt med en av våre dyktige medarbeidere, under finner du en oversikt over teamet vårt.</p>
+            
+            <!-- Contact form, contact page -->
+            <form class="ContactPageForm">
+                <div class="row">
+                    <div class="col form-group">
+                        <input type="text" class="form-control" placeholder="Navn...">
+                    </div>
+                    <div class="col form-group">
+                        <input type="email" class="form-control" placeholder="Epost...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-group">
+                        <select id="inputState" class="form-control">
+                            <option selected>Velg emne</option>
+                            <option>Generelle spørsmål</option>
+                            <option>Få hjelp med ditt prosjekt</option>
+                            <option>Prototypeutvikling</option>
+                            <option>Tilretteleggelse for serieproduksjon</option>
+                            <option>Elektromekanisk sammenstilling</option>
+                            <option>Logistikk</option>
+                            <option>Annet</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-group">
+                        <textarea type="text" rows="5" class="form-control textarea" placeholder="Melding..."></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary ContactPageButton">Send</button>
+                    </div>
+                </div>
+            </form>
+
+              <!-- Contact persons -->
+            
+            <h2 class="ContactSubtitle">Møt Teamet</h1>
+
+                    <div class="row">
+                        <div class="col-md">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img class="contactImg img-fluid rounded-circle" src="images/contactImg.PNG" />
+                                    </div>
+                                    <div class="col-sm">
+                                        <b>Liam Hemsworth</b><br>
+                                        <span>Assistant regional manager</span>
+                                        <p>(+47)12345678</p>
+                                        <button class="btn btn-success" data-toggle="modal" data-target="#contactModal">Send E-post</button>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-md">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img class="contactImg img-fluid rounded-circle" src="images/contactImg.PNG" />
+                                    </div>
+                                    <div class="col-sm">
+                                        <b>Liam Hemsworth</b><br>
+                                        <span>Assistant regional manager</span>
+                                        <p>(+47)12345678</p>
+                                        <button class="btn btn-success" data-toggle="modal" data-target="#contactModal">Send E-post</button>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="col-md">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img class="contactImg img-fluid rounded-circle" src="images/contactImg.PNG" />
+                                    </div>
+                                    <div class="col-sm">
+                                        <b>Liam Hemsworth</b><br>
+                                        <span>Assistant regional manager</span>
+                                        <p>(+47)12345678</p>
+                                        <button class="btn btn-success" data-toggle="modal" data-target="#contactModal">Send E-post</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
 
         </div>
     </main>

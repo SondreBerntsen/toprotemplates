@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=sondre.css.map */
+/* Stuff henta fra Ragnhild.scss helt kokt meny uten. */
+/* Form shit */
+.contact-description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: #7c7c7c;
+  line-height: 2.3rem;
+  padding-bottom: 30px;
+}
+
+.ContactTitle {
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.ContactSubtitle {
+  padding-bottom: 40px;
+  padding-top: 60px;
+}
+
+.ContactPageForm {
+  width: 60vw;
+}
+
+.ContactPageButton {
+  background-color: #2377BD;
+  width: 200px;
+}
+/*# sourceMappingURL=sondre.css.map */
