@@ -38,7 +38,6 @@
 }
 
 .searchbar {
-  display: block;
   width: 100%;
   padding: 10px;
   background-color: #e2e2e2;
@@ -59,11 +58,11 @@
 .breadcrumb {
   background-color: white;
   margin-top: 10px;
-  margin-left: 5px;
+  margin-left: 55px;
 }
 
 .serviceTagSection {
-  padding: 20px;
+  padding: 70px;
 }
 
 .serviceTagSection .serviceTag {
@@ -166,11 +165,13 @@ footer .footerSection {
 /***Article pages***/
 .articleContainer {
   margin-top: 30px;
-  padding: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .article {
   line-height: 1.8;
+  padding-right: 50px;
 }
 
 /***End - Article pages***/
