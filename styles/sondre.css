@@ -1,5 +1,4 @@
-/* Stuff henta fra Ragnhild.scss helt kokt meny uten. */
-/* Form shit */
+/* Kontakt page */
 .contact-description {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
@@ -28,6 +27,7 @@
   width: 200px;
 }
 
+/* Kundehistorier */
 .kundeHistorierContainer {
   position: relative;
   text-align: center;
@@ -37,10 +37,10 @@
 .kundeHistorierContent {
   position: absolute;
   top: 50%;
-  left: 80%;
+  left: 70%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 20rem;
+  width: 30rem;
   height: 20rem;
   text-align: left;
   padding: 30px;
@@ -51,5 +51,12 @@
 .yearSort {
   margin-top: -30px;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .kundeHistorierContent {
+    position: inherit;
+    left: 50%;
+  }
 }
 /*# sourceMappingURL=sondre.css.map */
