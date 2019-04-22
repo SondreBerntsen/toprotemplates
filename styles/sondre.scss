@@ -30,7 +30,26 @@
     width: 200px;
 }
 
-.kundeHistorieContainer {
-    background-color: #2377BD;
+.kundeHistorierContainer{
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
+.kundeHistorierContent {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+    height: 20rem;
+    text-align: left;
+    padding: 30px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.yearSort{
+    margin-top: -30px;
+    margin-bottom: 20px;
+}

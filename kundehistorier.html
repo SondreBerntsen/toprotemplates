@@ -12,6 +12,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/ragnhild.css">
+    <link rel="stylesheet" href="styles/sondre.css">
     <title>Topro Elektronikk</title>
 </head>
 
@@ -90,10 +91,11 @@
     <main>
         <div class="container">
             <!-- page title & description -->
-
             <h1 class="ContactTitle">Kundehistorier</h1>
-            <p class="contact-description">Sjekk ut prosjekter vi har vært å få være en del av!</p>
-            <div class="row">
+            <p class="contact-description">Sjekk ut prosjekter vi har hatt gleden å være en del av!</p>
+
+            <!-- Sort by year -->
+            <div class="row yearSort">
                 <div class="col-sm-3">
                     <select id="inputState" class="form-control">
                         <option selected>Sorter etter årstall</option>
@@ -107,18 +109,23 @@
                     </select>
                 </div>
             </div>
+ 
 
             <div class="row">
                 <div class="col">
-                    <img src="http://placehold.it/1000x550" alt="test" class="img-responsive">
-                        <div class="kundeHistorieContainer">
-                            <h1>Example headline.</h1>
+                    <div class="kundeHistorierContainer">
+                        <img src="http://placehold.it/1000x550" alt="Snow" style="width:100%;">
+                        
+                        <div class="kundeHistorierContent">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
                         </div>
+                    </div>
                 </div>
             </div>
-
-
-
         </div>
     </main>
 
