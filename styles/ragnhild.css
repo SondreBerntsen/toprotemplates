@@ -16,6 +16,7 @@
 
 .navbar {
   border-bottom: 1px solid gray;
+  /*box-shadow: 0px 15px 10px -20px #111;*/
 }
 
 .navbarLink {
@@ -51,6 +52,26 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.breadcrumb {
+  background-color: white;
+  margin-top: 10px;
+}
+
+.serviceTagSection {
+  padding: 20px;
+}
+
+.serviceTagSection .serviceTag {
+  margin: 5px;
+  border-color: #192E60;
+  color: #192E60;
+}
+
+.serviceTagSection .serviceTag:hover {
+  background-color: #192E60;
+  color: white;
 }
 
 /***End - masse rot***/
@@ -139,9 +160,9 @@ footer .footerSection {
 }
 
 /***End - footer***/
-/***Service page***/
+/***Article pages***/
 .articleContainer {
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 20px;
 }
 
@@ -149,7 +170,7 @@ footer .footerSection {
   line-height: 1.8;
 }
 
-/***End - Service page***/
+/***End - Article pages***/
 /***Sidebar***/
 .sideNavbar {
   background-color: #e2e2e2;
