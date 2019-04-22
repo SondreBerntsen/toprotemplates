@@ -15,8 +15,9 @@
 }
 
 .navbar {
-  border-bottom: 1px solid gray;
-  /*box-shadow: 0px 15px 10px -20px #111;*/
+  /*border-bottom: 1px solid gray;*/
+  -webkit-box-shadow: 0px 15px 10px -20px #111;
+          box-shadow: 0px 15px 10px -20px #111;
 }
 
 .navbarLink {
