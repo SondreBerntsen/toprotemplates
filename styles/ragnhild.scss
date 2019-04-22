@@ -87,6 +87,7 @@
   }
 }
 .newsSection{
+  margin-top: 50px;
   .newsArticleSection{
     position: relative;
     &:hover {
@@ -98,13 +99,13 @@
   }
 }
 .valuesSection{
-  margin-top: 30px;
+  margin-top: 50px;
 }
 /***End - front page***/
 
 /***Footer***/
 footer{
-  margin-top: 30px;
+  margin-top: 50px;
   width: 100%;
   min-height: 150px;
   background-color:#192E60; 
@@ -117,11 +118,11 @@ footer{
 /***End - footer***/
 
 /***Service page***/
-.serviceContainer{
+.articleContainer{
  margin-top:50px;
  padding: 20px;
 }
-.serviceArticle{
+.article{
   line-height: 1.8;
 }
 
