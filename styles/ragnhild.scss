@@ -145,9 +145,10 @@ footer{
 }
 .classtest{
   font-weight: bold;
+  text-decoration: underline;
 }
 .article{
-  @extend %classtest;
+  
   line-height: 1.8;
   padding-right:50px;
 }

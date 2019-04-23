@@ -5,10 +5,6 @@
 /*Tjeneste greia ser litt funky ut responsiv*/
 /*Searchbar trenger en real FFFFIIIXXX*/
 /***Masse rot***/
-.x {
-  background-color: aqua;
-}
-
 .logoImg {
   height: 50px;
 }
@@ -42,7 +38,7 @@
 }
 
 .searchbar {
-  width: 100%;
+  width: 300px;
   padding: 10px;
   background-color: #e2e2e2;
 }
@@ -173,6 +169,11 @@ footer .footerSection {
   margin-top: 30px;
   padding-left: 70px;
   padding-right: 70px;
+}
+
+.classtest {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .article {
