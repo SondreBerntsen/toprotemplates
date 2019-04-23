@@ -76,6 +76,10 @@
   color: white;
 }
 
+.heading1 {
+  padding: 1px;
+}
+
 /***End - masse rot***/
 /***Front page***/
 .servicesSection {
@@ -89,7 +93,7 @@
 }
 
 .servicesSection .serviceCatSection .serviceCatIcon {
-  height: 70px;
+  width: 80px;
 }
 
 .servicesSection .serviceCatSection .catDescr {
