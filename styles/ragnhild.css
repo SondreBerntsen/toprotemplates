@@ -5,6 +5,10 @@
 /*Tjeneste greia ser litt funky ut responsiv*/
 /*Searchbar trenger en real FFFFIIIXXX*/
 /***Masse rot***/
+.x {
+  background-color: aqua;
+}
+
 .logoImg {
   height: 50px;
 }
@@ -128,6 +132,8 @@
 
 .newsSection {
   margin-top: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .newsSection .newsArticleSection {
