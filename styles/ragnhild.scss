@@ -47,13 +47,23 @@
     align-items: center;
     justify-content: flex-end;
     input[type="search"]{
-      width: 415px;
       outline: none !important;
+      width: 85%;
+      border-top-right-radius: 0px !important;
+      border-bottom-right-radius: 0px !important;
+    }
+    button{
+      background-color: #192E60;
+      width: 15%;
+      border-top-left-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
     }
     
   }
 }
-@media (max-width:1024px) {
+
+
+@media (max-width:990px) {
   .searchbar{
     width: 100%;
     padding: 15px;
