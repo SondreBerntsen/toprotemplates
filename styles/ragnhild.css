@@ -38,9 +38,18 @@
 }
 
 .searchbar {
-  width: 300px;
-  padding: 10px;
-  background-color: #e2e2e2;
+  -webkit-transition: none !important;
+  transition: none !important;
+  width: 500px;
+  padding: 15px;
+  background-color: white;
+  /*box-shadow: 0px 0px 2px 2px lightgray;*/
+  -webkit-box-shadow: 1px 1px 2px gray;
+          box-shadow: 1px 1px 2px gray;
+  position: absolute;
+  z-index: 1;
+  top: 85px;
+  right: 10px;
 }
 
 .searchbar form {
@@ -53,6 +62,24 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.searchbar form input[type="search"] {
+  width: 415px;
+  outline: none !important;
+}
+
+@media (max-width: 1024px) {
+  .searchbar {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    position: relative;
+    margin: 0;
+    z-index: 0;
+    top: 0px;
+    right: 0px;
+  }
 }
 
 .breadcrumb {
