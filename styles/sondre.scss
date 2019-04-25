@@ -37,6 +37,10 @@
     color: white;
 }
 
+.kundeHistorierImage {
+    width: 100%;
+}
+
 .kundeHistorierContent {
     position: absolute;
     top: 50%;
@@ -55,19 +59,13 @@
 
 @media only screen and (max-width: 767px) {
     .kundeHistorierContent {
-        position: inherit;
-        left: 50%;
-        top: 70%;
-        transform: translate(-50%, -50%);
+        margin-top: 150px;
     }
 }
 
 @media only screen and (max-width: 992px) {
     .kundeHistorierContent {
-        position: inherit;
-        left: 50%;
-        top: 2rem;
-        transform: translate(-50%, -50%);
+        margin-top: 120px;
     }
 }
 
@@ -75,7 +73,6 @@
     .kundeHistorierContent {
         position: inherit;
         left: 50%;
-        top: 70%;
         transform: translate(-50%, -50%);
     }
 }
@@ -90,4 +87,28 @@
 
 .kundeHistorierButtonsPadding {
     margin-right: 10px;
+}
+
+/* 404 errorpage */
+
+.errorcontainer {
+    text-align: center;
+}
+
+.errortitle {
+    font-size: 5rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.errortext {
+    font-size: 2rem;
+}
+
+.errorlink {
+    font-size: 2rem;
+}
+
+.errorimage {
+    width: 220px;
+    padding-top: 40px;
 }

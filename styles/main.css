@@ -52,20 +52,8 @@ header {
   line-height: 37.5px;
 }
 
-/* footer */
-
 .footericon {
-  width: 30px !important;
+  height: 30px;
   margin: 13px;
-  height: 30%;
-}
-
-.newsul {
-  list-style: none;
-  margin-left: -40px;
-}
-
-.newsli {
-  color: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */
