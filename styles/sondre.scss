@@ -1,4 +1,18 @@
+/**Ragnhild prøver no greier**/
+.padding{
+    padding-left:70px;
+    padding-right:70px;
+  }
+  @media (max-width:990px) {
+    .padding{
+      padding-left:5px;
+      padding-right:5px;
+    }
+  }
 
+.customerStoryPage{
+    /*@extend .padding;*/
+}
 /* Kontakt page */
 
 .contact-description {
