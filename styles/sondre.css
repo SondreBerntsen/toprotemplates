@@ -91,4 +91,28 @@
 .kundeHistorierButtonsPadding {
   margin-right: 10px;
 }
+
+/* 404 errorpage */
+.errorcontainer {
+  text-align: center;
+}
+
+.errortitle {
+  font-size: 5rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.errortext {
+  font-size: 2rem;
+}
+
+.errorlink {
+  font-size: 2rem;
+}
+
+.errorimage {
+  width: 220px;
+  padding-top: 40px;
+}
 /*# sourceMappingURL=sondre.css.map */
