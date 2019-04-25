@@ -34,6 +34,10 @@
   color: white;
 }
 
+.kundeHistorierImage {
+  width: 100%;
+}
+
 .kundeHistorierContent {
   position: absolute;
   top: 50%;
@@ -52,21 +56,13 @@
 
 @media only screen and (max-width: 767px) {
   .kundeHistorierContent {
-    position: inherit;
-    left: 50%;
-    top: 70%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    margin-top: 150px;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .kundeHistorierContent {
-    position: inherit;
-    left: 50%;
-    top: 2rem;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    margin-top: 120px;
   }
 }
 
@@ -74,7 +70,6 @@
   .kundeHistorierContent {
     position: inherit;
     left: 50%;
-    top: 70%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
