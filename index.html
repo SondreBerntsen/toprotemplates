@@ -19,11 +19,21 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"><img class="logoImg" src="images/logo.PNG" alt="logo"></a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
-            aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div>
+            <img class="iconSearch" src="images/iconSearch.PNG" class="navbar-toggler" data-toggle="collapse"
+                data-target="#toggleSearchbar" aria-controls="toggleSearchbar" aria-expanded="false"
+                aria-label="Toggle navigation" />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="searchbar collapse" id="toggleSearchbar">
+            <form class="form-inline " action="sok.html">
+                <input class="form-control " type="search" placeholder="Søk" aria-label="Search">
+                <button class="btn btn-secondary " type="submit">Søk</button>
+            </form>
+        </div>
         <div class="collapse navbar-collapse my-2 my-lg-0" id="navbarToggle">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -82,12 +92,7 @@
             </ul>
         </div>
     </nav>
-    <div class="searchbar" id="toggleSearchbar">
-        <form class="form-inline " action="sok.html">
-            <input class="form-control " type="search" placeholder="Søk" aria-label="Search">
-            <button class="btn btn-secondary " type="submit">Søk</button>
-        </form>
-    </div>
+
     <header>
         <div class="txtHeader">
             <h1 class="text-center headertextmain">Topro elektronikk</h1>
@@ -136,7 +141,7 @@
                     <div class="col-sm-12  col-xl-4 serviceCatSection">
                         <img class="serviceCatIcon" src="images/icons/tjenester3.svg" alt="hei" />
                         <div class="catDescr">
-                            <h3 class="serviceHeading">Innkjøp, lager og produksjon</h3>
+                            <h3 class="serviceHeading">Logistikk</h3>
                             <p>Vi er totalleverandør av elektronikkproduksjon, våre tjenester innebører
                                 alt
                                 fra rådgiving til sammenstilling av elektromekaniske produkter og serieproduksjon av
@@ -186,7 +191,7 @@
                 </section>
                 <section class="col-md-6 col-lg-3">
                     <img class="img-fluid newsThumbnail" src="images/newsImg.PNG" />
-                    <p>noe annet</p>
+                    <p>Innovasjon</p>
                 </section>
             </div>
         </section>
