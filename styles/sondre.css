@@ -12,10 +12,10 @@
   }
 }
 
-.customerStoryPage {
-  /*@extend .padding;*/
-}
-
+/*
+.customerStoryPage{
+    @extend .padding;
+}*/
 /* Kontakt page */
 .contact-description {
   font-family: Arial, Helvetica, sans-serif;

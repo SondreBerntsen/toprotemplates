@@ -235,6 +235,11 @@ footer{
     }
   }
 }
+@media (max-width:990px) {
+  .sideNavbar{
+    display: none;
+  }
+}
 /***End - Sidebar***/
 
 /***Contact persons***/

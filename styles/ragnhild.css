@@ -264,6 +264,12 @@ footer .footerSection {
   background-color: lightgray;
 }
 
+@media (max-width: 990px) {
+  .sideNavbar {
+    display: none;
+  }
+}
+
 /***End - Sidebar***/
 /***Contact persons***/
 .contactSection {
