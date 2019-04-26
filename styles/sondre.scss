@@ -9,6 +9,7 @@
       padding-right:5px;
     }
   }
+
 /*
 .customerStoryPage{
     @extend .padding;
@@ -51,6 +52,17 @@
     color: white;
     padding-top: 30px;
 }
+
+.containerPadding {
+    @extend .padding;
+}
+
+  @media (max-width:990px) {
+    .padding{
+      padding-left:5px;
+      padding-right:5px;
+    }
+  }
 
 .kundeHistorierImage {
     width: 100%;
