@@ -125,3 +125,22 @@ header{
   }
 }
 /***End - Sidebar***/
+
+/***Contact persons***/
+.contactSection{
+    margin-top: 20px;
+  }
+  .contactPerson{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    .contactImg{
+      border-radius: 50%;
+    }
+    .contactInfo{
+      
+    }
+  }
+
+  /***End - contact persons****/
