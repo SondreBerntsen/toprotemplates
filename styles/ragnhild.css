@@ -158,7 +158,7 @@
 }
 
 .servicesSection .serviceCatSection .btnService {
-  width: 270px;
+  width: 290px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #192E60;
@@ -166,10 +166,7 @@
   display: block;
   margin: auto;
   margin-bottom: 5px;
-}
-
-.serviceCatSection:nth-child(2) {
-  /*?*/
+  border-radius: 0px;
 }
 
 .totalDeliverySection {
@@ -207,16 +204,17 @@
 
 .valuesSection .value {
   /**background: rgb(7, 30, 78, 0.589);**/
-  padding: 10px;
+  padding: 20px;
 }
 
 .valuesSection .value img {
+  /*fix*/
   width: 100%;
   height: 250px;
 }
 
 .valuesSection .value .valueHeading {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   padding: 10px;
   color: white;
@@ -225,6 +223,8 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  background-color: #192E60;
+  min-width: 150px;
 }
 
 .sectionHeading {
@@ -272,14 +272,15 @@ footer .footerSection {
   width: 100%;
 }
 
-.dateNewsArticle {
-  background-color: #e2e2e2;
-  padding: 10px;
+/*
+.dateNewsArticle{
+  background-color: #192E60;
+  color:white;
+  padding:10px;
   font-weight: bold;
   position: absolute;
-  top: 20px;
-}
-
+  top: 0px;
+}*/
 /***Search page***/
 .searchSection {
   margin-top: 20px;
