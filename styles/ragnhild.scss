@@ -121,15 +121,15 @@
       width: 80px ;
       }
     .catDescr{
-      width: 350px;
-      min-height: 150px;
+      width: 300px;
+      min-height: 60px;
       margin: auto;
       .serviceHeading{
         font-size:20px ;
       }
     }
     .btnService{
-      width: 300px;
+      width: 270px;
       padding-top: 10px;
       padding-bottom: 10px;
       background-color: #192E60;
@@ -139,6 +139,9 @@
       margin-bottom: 5px;
     }
   }
+}
+.serviceCatSection:nth-child(2){
+  /*?*/
 }
 .totalDeliverySection{
   @extend .padding;
@@ -171,6 +174,28 @@
 .valuesSection{
   margin-top: 50px;
   @extend .padding;
+  .value{
+    /**background: rgb(7, 30, 78, 0.589);**/
+    padding: 10px;
+    img{
+      width: 100%;
+      height: 250px;
+    }
+    .valueHeading{
+      font-size: 24px;
+      text-align: center;
+      padding: 10px;
+      color:white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+}
+.sectionHeading{
+  padding:20px;
 }
 /***End - front page***/
 
