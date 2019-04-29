@@ -233,66 +233,6 @@ footer .footerSection {
 }
 
 /***End - Article pages***/
-/***Sidebar***/
-.sideNavbar {
-  background-color: #e2e2e2;
-  padding-bottom: 20px;
-}
-
-.sideNavbar .sidebarHeading {
-  background-color: #192E60;
-  color: white;
-  padding: 20px;
-}
-
-.sideNavbar .sidebarContent .sidebarTitle {
-  font-size: 16px;
-  padding-top: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.sideNavbar .sidebarContent .sidebarLink {
-  display: block;
-  color: black;
-  padding: 10px;
-  padding-left: 25px;
-}
-
-.sideNavbar .sidebarContent .sidebarLink:hover {
-  text-decoration: none;
-  background-color: lightgray;
-}
-
-@media (max-width: 990px) {
-  .sideNavbar {
-    display: none;
-  }
-}
-
-/***End - Sidebar***/
-/***Contact persons***/
-.contactSection {
-  margin-top: 20px;
-}
-
-.contactPerson {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 20px;
-}
-
-.contactPerson .contactImg {
-  border-radius: 50%;
-}
-
 /***News page***/
 .firstNewsSection {
   margin-bottom: 30px;
