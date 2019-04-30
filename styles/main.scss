@@ -56,41 +56,6 @@ header{
 
 /***Sidebar***/
 .sideNavbar{
-    background-color: #e2e2e2;
-    padding-bottom: 20px;
-    
-    .sidebarHeading{
-      background-color:#192E60; 
-      color:white;
-      padding:20px;
-    }
-    .sidebarContent{
-      .sidebarTitle{
-        font-size: 16px;
-        padding-top: 15px;
-        padding-left: 20px;
-        padding-right: 20px;
-        
-      }
-      .sidebarLink{
-        display: block;
-        color:black;
-        padding: 10px;
-        padding-left: 25px;
-        &:hover{
-          text-decoration: none;
-          background-color: lightgray;
-        }
-      }
-    }
-  }
-  @media (max-width:990px) {
-    .sideNavbar{
-      display: none;
-    }
-  }
-  /***End - Sidebar***//***Sidebar***/
-.sideNavbar{
   background-color: #e2e2e2;
   padding-bottom: 20px;
   
@@ -102,7 +67,8 @@ header{
   .sidebarContent{
     .sidebarTitle{
       font-size: 16px;
-      padding-top: 15px;
+      padding-top: 10px;
+      padding-bottom: 5px;
       padding-left: 20px;
       padding-right: 20px;
       
@@ -119,12 +85,36 @@ header{
     }
   }
 }
-@media (max-width:990px) {
+@media (max-width:1199px) {
   .sideNavbar{
     display: none;
   }
 }
 /***End - Sidebar***/
+
+
+/* Sidebar collapse */
+.sideNavbarCollapse {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #e2e2e2; /*Grey*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+
+
 
 /***Contact persons***/
 .contactSection{

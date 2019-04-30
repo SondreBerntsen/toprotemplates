@@ -149,3 +149,44 @@
     width: 210px;
     padding-top: 40px;
 }
+
+
+/* Back up CSS vet ikke om skal slettes
+
+/***Sidebar***/
+/*
+.sideNavbar{
+    background-color: #e2e2e2;
+    padding-bottom: 20px;
+    
+    .sidebarHeading{
+      background-color:#192E60; 
+      color:white;
+      padding:20px;
+    }
+    .sidebarContent{
+      .sidebarTitle{
+        font-size: 16px;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+      }
+      .sidebarLink{
+        display: block;
+        color:black;
+        padding: 10px;
+        padding-left: 25px;
+        &:hover{
+          text-decoration: none;
+          background-color: lightgray;
+        }
+      }
+    }
+  }
+  @media (max-width:990px) {
+    .sideNavbar{
+      display: none;
+    }
+  }
+  /***End - Sidebar***/

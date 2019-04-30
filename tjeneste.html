@@ -86,10 +86,14 @@
             <button class="btn btn-secondary" type="submit">Søk</button>
         </form>
     </div>
+    
+
     <main>
         <div class="container">
+            
             <div class="articleContainer row">
                 <article class="article col-lg-8">
+                <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidebar</button>
                     <h1>Tilretteleggelse for serieproduksjon</h1>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -117,22 +121,59 @@
                     <button class="btn btn-lg btn-success" data-toggle="modal" data-target="#contactModal">Kontakt
                         oss</button>
                 </article>
+
+                <!-- Sidebar collapse -->
+
+                <section class="sideNavbarCollapse" id="sideNavbarC" >
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <h4 class="sidebarHeading">Vi tilbyr</h4>
+                        <div class="sidebarContent">
+                            
+                            <h5 class="sidebarTitle">Rådgiving og samarbeidsmuligheter</h5>
+                            <hr>
+                            <a class="sidebarLink" href="#">Rådgiving</a>
+                            <a class="sidebarLink" href="#">Ekspertise og erfaring</a>
+                            <a class="sidebarLink" href="#">Prototype</a>
+                            <hr>
+                            <h5 class="sidebarTitle">Produksjon</h5>
+                            <hr>
+                            <a class="sidebarLink" href="#">Tilretteleggelse for serieproduksjon</a>
+                            <a class="sidebarLink" href="#">Kretskortproduksjon</a>
+                            <a class="sidebarLink" href="#">Elektromekanisk sammenstilling</a>
+                            <a class="sidebarLink" href="#">Testing</a>
+                            <hr>
+                            <h5 class="sidebarTitle">Innkjøp, lager og logistikk</h5>
+                            <hr>
+                            <a class="sidebarLink" href="#">Innkjøp</a>
+                            <a class="sidebarLink" href="#">Lager</a>
+                            <a class="sidebarLink" href="#">Logistikk</a>
+                        </div>
+                    </section>
+
+
+
+                <!-- Sidebar -->
+
+
                 <aside class="col-lg-4">
                     <section class="sideNavbar">
                         <h4 class="sidebarHeading">Vi tilbyr</h4>
                         <div class="sidebarContent">
                             <h5 class="sidebarTitle">Rådgiving og samarbeidsmuligheter</h5>
+                            <hr>
                             <a class="sidebarLink" href="#">Rådgiving</a>
                             <a class="sidebarLink" href="#">Ekspertise og erfaring</a>
                             <a class="sidebarLink" href="#">Prototype</a>
-
+                            <hr>
                             <h5 class="sidebarTitle">Produksjon</h5>
+                            <hr>
                             <a class="sidebarLink" href="#">Tilretteleggelse for serieproduksjon</a>
                             <a class="sidebarLink" href="#">Kretskortproduksjon</a>
                             <a class="sidebarLink" href="#">Elektromekanisk sammenstilling</a>
                             <a class="sidebarLink" href="#">Testing</a>
-
+                            <hr>
                             <h5 class="sidebarTitle">Innkjøp, lager og logistikk</h5>
+                            <hr>
                             <a class="sidebarLink" href="#">Innkjøp</a>
                             <a class="sidebarLink" href="#">Lager</a>
                             <a class="sidebarLink" href="#">Logistikk</a>
@@ -257,6 +298,18 @@
 </html>
 
 <script>
+
+    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+    function openNav() {
+        document.getElementById("sideNavbarC").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("sideNavbarC").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
 
     function sendMail() {
         var h = document.getElementById('success');
