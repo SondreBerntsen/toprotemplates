@@ -88,12 +88,12 @@
     </div>
     
 
-    <main>
+    <main id="main">
         <div class="container">
             
             <div class="articleContainer row">
                 <article class="article col-lg-8">
-                <button class="openbtn" onclick="openNav()">&#9776; Toggle Sidebar</button>
+                <button class="openbtn btn btn-info" onclick="openNav()">Flere tjenester</button>
                     <h1>Tilretteleggelse for serieproduksjon</h1>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -301,14 +301,15 @@
 
     /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
     function openNav() {
-        document.getElementById("sideNavbarC").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("sideNavbarC").style.width = "55%";
+        document.getElementById("sideNavbarC").style.marginRight = "0";
     }
     
     /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
     function closeNav() {
         document.getElementById("sideNavbarC").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("sideNavbarC").style.marginRight = "-36px";
+        document.getElementById("main").style.marginRight = "0";
     }
 
     function sendMail() {

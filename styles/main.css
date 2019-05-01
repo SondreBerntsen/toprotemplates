@@ -97,26 +97,27 @@ header {
 
 /***End - Sidebar***/
 /* Sidebar collapse */
+@media (min-width: 1199px) {
+  .openbtn {
+    display: none;
+  }
+}
+
 .sideNavbarCollapse {
   height: 100%;
-  /* 100% Full-height */
   width: 0;
-  /* 0 width - change this with JavaScript */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Stay on top */
   top: 0;
-  left: 0;
+  right: 0px;
   background-color: #e2e2e2;
-  /*Grey*/
   overflow-x: hidden;
-  /* Disable horizontal scroll */
+  overflow-y: hidden;
   padding-top: 60px;
-  /* Place content 60px from the top */
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidebar */
+  padding: 18px;
+  margin-right: -36px;
 }
 
 .sideNavbarCollapse .closebtn {
@@ -125,6 +126,19 @@ header {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.sideNavbarCollapse .sidebarLink {
+  padding: 30px;
+  display: block;
+  color: black;
+  padding: 10px;
+  padding-left: 25px;
+}
+
+.sideNavbarCollapse .sidebarLink:hover {
+  text-decoration: none;
+  background-color: lightgray;
 }
 
 /***Contact persons***/
