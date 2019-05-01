@@ -175,14 +175,30 @@
 }
 .newsSection{
   margin-top: 30px;
+  
   @extend .padding;
   .newsArticleSection{
+    margin-bottom: 30px;
     position: relative;
+    color:black;
+    .newsSectionHeading{
+      font-size: 18px;
+      margin-top: 10px;
+    }
     &:hover {
       cursor: pointer;
+      text-decoration: none;
     }
     .newsThumbnail{
       width: 100%;
+    }
+    hr{
+      margin: 0;
+      border-color: #111;
+    }
+    .dateNewsArticle{
+      font-size: 14px;
+      margin-bottom: 0;
     }
   }
 }
@@ -254,6 +270,15 @@ footer{
 /***News page***/
 .firstNewsSection{
   margin-bottom: 30px;
+  color:black;
+  &:hover{
+    text-decoration: none;
+    color:black;
+  }
+  hr{
+
+    border-color: #111;
+  }
 }
 .firstNewsThumbnail{
   width: 100%;
