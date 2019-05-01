@@ -40,6 +40,15 @@
   margin-right: 0.5em;
 }
 
+.dropdownSection {
+  border-radius: 0px;
+}
+
+.dropdownSection .dropdown-item:active {
+  background-color: #e2e2e2;
+  color: black;
+}
+
 .txtHeader {
   width: 500px;
 }
@@ -47,6 +56,10 @@
 .iconSearch {
   height: 30px;
   cursor: pointer;
+}
+
+.iconSearch2 {
+  display: none;
 }
 
 .searchbar {
@@ -102,6 +115,13 @@
     right: 0px;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .iconSearch1 {
+    display: none;
+  }
+  .iconSearch2 {
+    display: inline-block;
+    margin-right: 10px;
   }
 }
 
