@@ -89,7 +89,7 @@ header {
   background-color: lightgray;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .sideNavbar {
     display: none;
   }
@@ -97,9 +97,13 @@ header {
 
 /***End - Sidebar***/
 /* Sidebar collapse */
-@media (min-width: 1199px) {
-  .openbtn {
+@media (min-width: 1200px) {
+  .openbtn, .blah, .sideNavbarCollapse {
     display: none;
+  }
+  /**FIX why u not work???????? :(**/
+  #bleh, #sideNavbarC {
+    width: 0px;
   }
 }
 
@@ -109,36 +113,75 @@ header {
   position: fixed;
   z-index: 1;
   top: 0;
-  right: 0px;
+  left: 0px;
   background-color: #e2e2e2;
   overflow-x: hidden;
   overflow-y: hidden;
-  padding-top: 60px;
+  overflow-y: auto;
+  /**padding-top: 10px;**/
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding: 18px;
-  margin-right: -36px;
 }
 
 .sideNavbarCollapse .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
+  left: 230px;
+  top: -5px;
   font-size: 36px;
-  margin-left: 50px;
+  color: white;
+}
+
+.sideNavbarCollapse .sidebarHeading {
+  padding: 10px;
+  padding-left: 15px;
+  background-color: #192E60;
+  color: white;
+  margin: 0;
+}
+
+.sideNavbarCollapse .smallServiceIcon {
+  width: 40px;
+}
+
+.sideNavbarCollapse .sidebarTitle {
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  font-weight: bolder;
+  /*border-bottom:1px solid lightgray;
+    box-shadow: 0 8px 6px -6px lightgray;*/
+}
+
+.sideNavbarCollapse .hrdrit {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-color: gray;
 }
 
 .sideNavbarCollapse .sidebarLink {
-  padding: 30px;
+  font-size: 14px;
+  padding: 10px;
+  padding-left: 20px;
   display: block;
   color: black;
-  padding: 10px;
-  padding-left: 25px;
 }
 
 .sideNavbarCollapse .sidebarLink:hover {
   text-decoration: none;
-  background-color: lightgray;
+}
+
+.blah {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 0;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 /***Contact persons***/

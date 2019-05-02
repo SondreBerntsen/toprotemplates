@@ -18,10 +18,21 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"><img class="logoImg" src="images/logo.PNG" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
-            aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div>
+            <img class="iconSearch iconSearch2" src="images/iconSearch.PNG" class="navbar-toggler"
+                data-toggle="collapse" data-target="#toggleSearchbar" aria-controls="toggleSearchbar"
+                aria-expanded="false" aria-label="Toggle navigation" />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="searchbar collapse" id="toggleSearchbar">
+            <form class="form-inline " action="sok.html">
+                <input class="form-control " type="search" placeholder="Søk" aria-label="Search">
+                <button class="btn btn-secondary " type="submit">Søk</button>
+            </form>
+        </div>
         <div class="collapse navbar-collapse my-2 my-lg-0" id="navbarToggle">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -32,7 +43,7 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Tjenester
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="serviceDropdownMenuLink">
+                    <div class="dropdown-menu dropdownSection" aria-labelledby="serviceDropdownMenuLink">
                         <a class="dropdown-item" href="tjeneste.html">Rådgiving</a>
                         <a class="dropdown-item" href="tjeneste.html">Ekspertise og erfaringer</a>
                         <a class="dropdown-item" href="tjeneste.html">Prototype</a>
@@ -58,7 +69,7 @@
                     <a class="nav-link dropdown-toggle navbarLink" href="#" id="aboutDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Om oss
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="aboutDropdownMenuLink">
+                    <div class="dropdown-menu dropdownSection" aria-labelledby="aboutDropdownMenuLink">
                         <a class="dropdown-item" href="omoss.html">Historie</a>
                         <a class="dropdown-item" href="omoss.html">Miljø og etikk</a>
                         <a class="dropdown-item" href="omoss.html">Kvalitetssikring</a>
@@ -73,27 +84,19 @@
                     <a class="nav-link navbarLink" href="kontakt.html">Kontakt</a>
                 </li>
                 <li>
-                    <img class="iconSearch" src="images/iconSearch.PNG" class="navbar-toggler" data-toggle="collapse"
-                        data-target="#toggleSearchbar" aria-controls="toggleSearchbar" aria-expanded="false"
-                        aria-label="Toggle navigation" />
+                    <img class="iconSearch iconSearch1" src="images/iconSearch.PNG" class="navbar-toggler"
+                        data-toggle="collapse" data-target="#toggleSearchbar" aria-controls="toggleSearchbar"
+                        aria-expanded="false" aria-label="Toggle navigation" />
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="collapse searchbar" id="toggleSearchbar">
-        <form class="form-inline">
-            <input class="form-control " type="search" placeholder="Søk" aria-label="Search">
-            <button class="btn btn-secondary" type="submit">Søk</button>
-        </form>
-    </div>
-    
-
     <main id="main">
         <div class="container">
-            
+
             <div class="articleContainer row">
-                <article class="article col-lg-8">
-                <button class="openbtn btn btn-info" onclick="openNav()">Flere tjenester</button>
+                <article class="article  col-lg-8">
+                    <button class="openbtn btn btn-info" onclick="openNav()">Flere tjenester</button>
                     <h1>Tilretteleggelse for serieproduksjon</h1>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -123,43 +126,45 @@
                 </article>
 
                 <!-- Sidebar collapse -->
+                <a href="#" onclick="closeNav()" class="blah" id="bleh">
 
-                <section class="sideNavbarCollapse" id="sideNavbarC" >
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <section class="sideNavbarCollapse " id="sideNavbarC">
+                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                        <!--<img class="logoSidebarCollapse" src="images/logo.PNG" alt="logo">-->
                         <h4 class="sidebarHeading">Vi tilbyr</h4>
                         <div class="sidebarContent">
-                            
-                            <h5 class="sidebarTitle">Rådgiving og samarbeidsmuligheter</h5>
-                            <hr>
-                            <a class="sidebarLink" href="#">Rådgiving</a>
-                            <a class="sidebarLink" href="#">Ekspertise og erfaring</a>
+
+                            <h5 class="sidebarTitle">Rådgiving</h5>
+                            <hr class="hrdrit">
+                            <a class="sidebarLink" href="tjeneste.html">Rådgiving</a>
+                            <a class="sidebarLink" href="index.html">Ekspertise og erfaring</a>
                             <a class="sidebarLink" href="#">Prototype</a>
-                            <hr>
+
                             <h5 class="sidebarTitle">Produksjon</h5>
-                            <hr>
+                            <hr class="hrdrit">
                             <a class="sidebarLink" href="#">Tilretteleggelse for serieproduksjon</a>
                             <a class="sidebarLink" href="#">Kretskortproduksjon</a>
                             <a class="sidebarLink" href="#">Elektromekanisk sammenstilling</a>
                             <a class="sidebarLink" href="#">Testing</a>
-                            <hr>
-                            <h5 class="sidebarTitle">Innkjøp, lager og logistikk</h5>
-                            <hr>
+
+                            <h5 class="sidebarTitle">Logistikk</h5>
+                            <hr class="hrdrit">
                             <a class="sidebarLink" href="#">Innkjøp</a>
                             <a class="sidebarLink" href="#">Lager</a>
-                            <a class="sidebarLink" href="#">Logistikk</a>
+                            <a class="sidebarLink" href="#">Distribusjon</a>
                         </div>
                     </section>
-
+                </a>
 
 
                 <!-- Sidebar -->
 
 
-                <aside class="col-lg-4">
+                <aside class=" col-lg-4">
                     <section class="sideNavbar">
                         <h4 class="sidebarHeading">Vi tilbyr</h4>
                         <div class="sidebarContent">
-                            <h5 class="sidebarTitle">Rådgiving og samarbeidsmuligheter</h5>
+                            <h5 class="sidebarTitle">Rådgiving</h5>
                             <hr>
                             <a class="sidebarLink" href="#">Rådgiving</a>
                             <a class="sidebarLink" href="#">Ekspertise og erfaring</a>
@@ -172,11 +177,11 @@
                             <a class="sidebarLink" href="#">Elektromekanisk sammenstilling</a>
                             <a class="sidebarLink" href="#">Testing</a>
                             <hr>
-                            <h5 class="sidebarTitle">Innkjøp, lager og logistikk</h5>
+                            <h5 class="sidebarTitle">Logistikk</h5>
                             <hr>
                             <a class="sidebarLink" href="#">Innkjøp</a>
                             <a class="sidebarLink" href="#">Lager</a>
-                            <a class="sidebarLink" href="#">Logistikk</a>
+                            <a class="sidebarLink" href="#">Distribusjon</a>
                         </div>
                     </section>
                     <section class="contactSection">
@@ -187,7 +192,8 @@
                                 <b>Liam Hemsworth</b><br>
                                 <span>Amazing</span>
                                 <p>(+47)12345678</p>
-                                <button class="btn btn-success" data-toggle="modal" data-target="#contactModal">Send
+                                <button class="btn btn-success btn-sm" data-toggle="modal"
+                                    data-target="#contactModal">Send
                                     E-post</button>
                             </div>
                         </section>
@@ -197,7 +203,8 @@
                                 <b>Liam Hemsworth</b><br>
                                 <span>Amazing</span>
                                 <p>(+47)12345678</p>
-                                <button class="btn btn-success" data-toggle="modal" data-target="#contactModal">Send
+                                <button class="btn btn-success btn-sm" data-toggle="modal"
+                                    data-target="#contactModal">Send
                                     E-post</button>
                             </div>
                         </section>
@@ -301,15 +308,14 @@
 
     /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
     function openNav() {
-        document.getElementById("sideNavbarC").style.width = "55%";
-        document.getElementById("sideNavbarC").style.marginRight = "0";
+        document.getElementById("sideNavbarC").style.width = "270px";
+        document.getElementById("bleh").style.width = "100%";
     }
-    
+
     /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
     function closeNav() {
         document.getElementById("sideNavbarC").style.width = "0";
-        document.getElementById("sideNavbarC").style.marginRight = "-36px";
-        document.getElementById("main").style.marginRight = "0";
+        document.getElementById("bleh").style.width = "0";
     }
 
     function sendMail() {
