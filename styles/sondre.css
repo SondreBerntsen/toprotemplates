@@ -159,9 +159,30 @@
   max-width: 900px;
 }
 
-@media only screen and (max-width: 1199px) {
-  .totalDeliverySection .mobileVisible {
+.mobileVisible {
+  width: 40% !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobileVisible {
     display: none;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .desktopVisible {
+    display: none;
+  }
+}
+
+/* Footer */
+footer .newsul {
+  list-style: none;
+  margin-left: -40px;
+  line-height: 2.1rem;
+}
+
+footer .newsul .newsli a {
+  color: lightblue;
 }
 /*# sourceMappingURL=sondre.css.map */
