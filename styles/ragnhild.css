@@ -5,13 +5,13 @@
 /*Tjeneste greia ser litt funky ut responsiv*/
 /*Searchbar trenger en real FFFFIIIXXX*/
 /***Masse rot***/
-.padding, .totalDeliverySection, .newsSection, .valuesSection, .articleContainer, .searchSection {
+.padding, .newsSection, .valuesSection, .articleContainer, .searchSection {
   padding-left: 70px;
   padding-right: 70px;
 }
 
 @media (max-width: 990px) {
-  .padding, .totalDeliverySection, .newsSection, .valuesSection, .articleContainer, .searchSection {
+  .padding, .newsSection, .valuesSection, .articleContainer, .searchSection {
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -187,19 +187,6 @@
   margin: auto;
   margin-bottom: 5px;
   border-radius: 0px;
-}
-
-.totalDeliverySection {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #e2e2e2;
-  text-align: center;
-}
-
-.totalDeliverySection .totaldeliveryTxt {
-  margin: auto;
-  padding: 20px;
-  max-width: 900px;
 }
 
 .newsSection {
