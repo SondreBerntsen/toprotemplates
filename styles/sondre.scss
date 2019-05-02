@@ -149,3 +149,25 @@
     width: 210px;
     padding-top: 40px;
 }
+
+
+/* Frontpage */
+
+.totalDeliverySection{
+    @extend .padding;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #e2e2e2;
+    text-align: center;
+    .totaldeliveryTxt{ 
+      margin: auto;
+      padding:20px;
+      max-width: 900px;
+    }
+    @media only screen and (max-width: 1199px) {
+        .mobileVisible {
+        display: none;
+        }
+    }
+  }
+

@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /**Ragnhild prøver no greier**/
-.padding, .containerPadding {
+.padding, .containerPadding, .totalDeliverySection {
   padding-left: 70px;
   padding-right: 70px;
 }
 
 @media (max-width: 990px) {
-  .padding, .containerPadding {
+  .padding, .containerPadding, .totalDeliverySection {
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -58,7 +58,7 @@
 }
 
 @media (max-width: 990px) {
-  .padding, .containerPadding {
+  .padding, .containerPadding, .totalDeliverySection {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -143,5 +143,25 @@
 .errorimage {
   width: 210px;
   padding-top: 40px;
+}
+
+/* Frontpage */
+.totalDeliverySection {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e2e2e2;
+  text-align: center;
+}
+
+.totalDeliverySection .totaldeliveryTxt {
+  margin: auto;
+  padding: 20px;
+  max-width: 900px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .totalDeliverySection .mobileVisible {
+    display: none;
+  }
 }
 /*# sourceMappingURL=sondre.css.map */
