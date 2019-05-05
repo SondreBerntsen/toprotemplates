@@ -151,46 +151,4 @@
 }
 
 
-/* Frontpage */
 
-.totalDeliverySection{
-    @extend .padding;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #e2e2e2;
-    text-align: center;
-    .totaldeliveryTxt{ 
-      margin: auto;
-      padding:20px;
-      max-width: 900px;
-    }
-  }
-
-.mobileVisible {
-    width: 40% !important;
-}
-
-@media only screen and (min-width: 768px) {
-    .mobileVisible {
-    display: none;
-    }
-}
-@media only screen and (max-width: 768px) {
-    .desktopVisible {
-    display: none;  
-    }
-}
-
-/* Footer */
-footer {
-    .newsul {
-        list-style: none;
-        margin-left: -40px;
-        line-height: 2.1rem;
-        .newsli {
-            a {
-                color: lightblue;
-            }
-        }
-    }
-}
