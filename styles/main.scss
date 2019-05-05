@@ -116,6 +116,34 @@ body{
     margin-right:10px;
   }
 }
+footer{
+  @extend .padding;
+  margin-top: 50px;
+  width: 100%;
+  min-height: 150px;
+  background-color:#192E60; 
+  color:white;
+  padding:30px;
+ .footerSection{
+  padding:20px;
+  .footericon {
+    height: 30px;
+    margin: 13px;
+  }
+  .newsul {
+    list-style: none;
+    margin-left: -40px;
+    line-height: 2.1rem;
+    .newsli {
+        a {
+            color: lightblue;
+        }
+    }
+  }
+ }
+
+ 
+}
 /**********END - GENERAL**********/
 
 /**********FRONT PAGE**********/
@@ -281,56 +309,57 @@ header{
 
 
 
-.footericon {
-    height: 30px;
-    margin: 13px;
-}
+
 
 
 /***Sidebar***/
 .sideNavbar{
   background-color: #e2e2e2;
   padding-bottom: 20px;
-  
-  .sidebarHeading{
-    background-color:#192E60; 
-    color:white;
-    padding:20px;
+}
+.sidebarHeading{
+  background-color:#192E60; 
+  color:white;
+  padding:15px;
+  margin: 0;
+  white-space: nowrap;
+}
+.sidebarContent{
+  .sidebarTitle{
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bolder;
+
   }
-  .sidebarContent{
-    .sidebarTitle{
-      font-size: 16px;
-      padding-top: 10px;
-      padding-bottom: 5px;
-      padding-left: 20px;
-      padding-right: 20px;
-      font-weight: bolder;
-      
-    }
-    .hrdrit{
-      margin: 0;
-      margin-left: 20px;
-      margin-right: 20px;
-      border-color: gray;
-    }
-    .sidebarLink{
-      display: block;
-      color:black;
-      padding: 10px;
-      padding-left: 25px;
-      &:hover{
-        text-decoration: none;
-        background-color: lightgray;
-      }
+  .hrSidebar{
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-color: rgb(182, 179, 179);
+  }
+  .sidebarLink{
+    white-space: nowrap;
+    font-size: 15px;
+    display: block;
+    color:black;
+    padding: 10px;
+    padding-left: 25px;
+    &:hover{
+      text-decoration: none;
+      background-color: lightgray;
     }
   }
 }
+
 @media (max-width:1200px) {
   .sideNavbar{
     display: none;
   }
 }
-/***End - Sidebar***/
+
 
 
 /* Sidebar collapse */
@@ -338,12 +367,7 @@ header{
   .openbtn,.blah, .sideNavbarCollapse {
     display: none;
   }
-  /**FIX why u not work???????? :(**/
-  #bleh, #sideNavbarC{
-    width: 0px;
-  }
 }
-
 .sideNavbarCollapse {
     height: 100%;
     width: 0;
@@ -355,57 +379,18 @@ header{
     overflow-x: hidden;
     overflow-y: hidden;
     overflow-y: auto;
-    /**padding-top: 10px;**/
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: .5s;
+    transition: .5s;
     .closebtn {
       position: absolute;
-      left: 230px;
-      top: -5px;
+      left: 250px;
       font-size: 36px;
       color:white;
+      &:hover{
+        text-decoration: none;
+      }
     }
-  .sidebarHeading{
-    padding: 10px;
-    padding-left:15px;
-    background-color: #192E60;
-    color:white;
-    margin: 0;
-  }
- .smallServiceIcon{
-   width: 40px;
- }
-  .sidebarTitle{
-    font-size: 16px;
-    padding: 10px;
-    padding-left:20px;
-    margin-bottom:0;
-    padding-bottom:10px;
-    padding-top:20px;
-    font-weight: bolder;
-    /*border-bottom:1px solid lightgray;
-    box-shadow: 0 8px 6px -6px lightgray;*/
-  }
-  .hrdrit{
-    margin: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-color: gray;
-  }
-  .sidebarLink {
- 
-    font-size: 14px;
-    padding: 10px;
-    padding-left:20px;
-    display: block;
-    color:black;
-    &:hover{
-      text-decoration: none;
-      
-    }
-  }
 }
-
 .blah{
   background-color:rgba(0, 0, 0, 0.5);
   width: 0;
@@ -414,10 +399,8 @@ header{
   position: fixed;
   top: 0;
   left: 0;
-  
-
 }
-
+/***End - Sidebar***/
 
 /***Contact persons***/
 .contactSection{

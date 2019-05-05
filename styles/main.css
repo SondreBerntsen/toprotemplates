@@ -24,13 +24,13 @@ body main {
   }
 }
 
-.padding, .totalDeliverySection, .valuesSection, .newsSection {
+.padding, footer, .totalDeliverySection, .valuesSection, .newsSection {
   padding-left: 70px;
   padding-right: 70px;
 }
 
 @media (max-width: 990px) {
-  .padding, .totalDeliverySection, .valuesSection, .newsSection {
+  .padding, footer, .totalDeliverySection, .valuesSection, .newsSection {
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -137,6 +137,34 @@ body main {
     display: inline-block;
     margin-right: 10px;
   }
+}
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  min-height: 150px;
+  background-color: #192E60;
+  color: white;
+  padding: 30px;
+}
+
+footer .footerSection {
+  padding: 20px;
+}
+
+footer .footerSection .footericon {
+  height: 30px;
+  margin: 13px;
+}
+
+footer .footerSection .newsul {
+  list-style: none;
+  margin-left: -40px;
+  line-height: 2.1rem;
+}
+
+footer .footerSection .newsul .newsli a {
+  color: lightblue;
 }
 
 /**********END - GENERAL**********/
@@ -318,47 +346,46 @@ header .txtHeader .headertxtsub {
 
 /**********END - FRONT PAGE**********/
 /*******************************************************************************************************************/
-.footericon {
-  height: 30px;
-  margin: 13px;
-}
-
 /***Sidebar***/
 .sideNavbar {
   background-color: #e2e2e2;
   padding-bottom: 20px;
 }
 
-.sideNavbar .sidebarHeading {
+.sidebarHeading {
   background-color: #192E60;
   color: white;
-  padding: 20px;
+  padding: 15px;
+  margin: 0;
+  white-space: nowrap;
 }
 
-.sideNavbar .sidebarContent .sidebarTitle {
+.sidebarContent .sidebarTitle {
   font-size: 16px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
   font-weight: bolder;
 }
 
-.sideNavbar .sidebarContent .hrdrit {
+.sidebarContent .hrSidebar {
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-  border-color: gray;
+  border-color: #b6b3b3;
 }
 
-.sideNavbar .sidebarContent .sidebarLink {
+.sidebarContent .sidebarLink {
+  white-space: nowrap;
+  font-size: 15px;
   display: block;
   color: black;
   padding: 10px;
   padding-left: 25px;
 }
 
-.sideNavbar .sidebarContent .sidebarLink:hover {
+.sidebarContent .sidebarLink:hover {
   text-decoration: none;
   background-color: lightgray;
 }
@@ -369,15 +396,10 @@ header .txtHeader .headertxtsub {
   }
 }
 
-/***End - Sidebar***/
 /* Sidebar collapse */
 @media (min-width: 1200px) {
   .openbtn, .blah, .sideNavbarCollapse {
     display: none;
-  }
-  /**FIX why u not work???????? :(**/
-  #bleh, #sideNavbarC {
-    width: 0px;
   }
 }
 
@@ -392,59 +414,18 @@ header .txtHeader .headertxtsub {
   overflow-x: hidden;
   overflow-y: hidden;
   overflow-y: auto;
-  /**padding-top: 10px;**/
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .sideNavbarCollapse .closebtn {
   position: absolute;
-  left: 230px;
-  top: -5px;
+  left: 250px;
   font-size: 36px;
   color: white;
 }
 
-.sideNavbarCollapse .sidebarHeading {
-  padding: 10px;
-  padding-left: 15px;
-  background-color: #192E60;
-  color: white;
-  margin: 0;
-}
-
-.sideNavbarCollapse .smallServiceIcon {
-  width: 40px;
-}
-
-.sideNavbarCollapse .sidebarTitle {
-  font-size: 16px;
-  padding: 10px;
-  padding-left: 20px;
-  margin-bottom: 0;
-  padding-bottom: 10px;
-  padding-top: 20px;
-  font-weight: bolder;
-  /*border-bottom:1px solid lightgray;
-    box-shadow: 0 8px 6px -6px lightgray;*/
-}
-
-.sideNavbarCollapse .hrdrit {
-  margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-color: gray;
-}
-
-.sideNavbarCollapse .sidebarLink {
-  font-size: 14px;
-  padding: 10px;
-  padding-left: 20px;
-  display: block;
-  color: black;
-}
-
-.sideNavbarCollapse .sidebarLink:hover {
+.sideNavbarCollapse .closebtn:hover {
   text-decoration: none;
 }
 
@@ -458,6 +439,7 @@ header .txtHeader .headertxtsub {
   left: 0;
 }
 
+/***End - Sidebar***/
 /***Contact persons***/
 .contactSection {
   margin-top: 20px;

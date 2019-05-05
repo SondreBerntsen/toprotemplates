@@ -32,42 +32,19 @@
 }
 
 /***End - masse rot***/
-.padding, footer, .articleContainer, .searchSection {
+.padding, .articleContainer, .searchSection {
   padding-left: 70px;
   padding-right: 70px;
 }
 
 @media (max-width: 990px) {
-  .padding, footer, .articleContainer, .searchSection {
+  .padding, .articleContainer, .searchSection {
     padding-left: 5px;
     padding-right: 5px;
   }
 }
 
 /***Footer***/
-footer {
-  margin-top: 50px;
-  width: 100%;
-  min-height: 150px;
-  background-color: #192E60;
-  color: white;
-  padding: 30px;
-}
-
-footer .footerSection {
-  padding: 20px;
-}
-
-footer .newsul {
-  list-style: none;
-  margin-left: -40px;
-  line-height: 2.1rem;
-}
-
-footer .newsul .newsli a {
-  color: lightblue;
-}
-
 /***End - footer***/
 /***Article pages***/
 .articleContainer {

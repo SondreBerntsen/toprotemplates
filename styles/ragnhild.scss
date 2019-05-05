@@ -44,28 +44,7 @@
 }
 
 /***Footer***/
-footer{
-  @extend .padding;
-  margin-top: 50px;
-  width: 100%;
-  min-height: 150px;
-  background-color:#192E60; 
-  color:white;
-  padding:30px;
- .footerSection{
-  padding:20px;
- }
- .newsul {
-  list-style: none;
-  margin-left: -40px;
-  line-height: 2.1rem;
-  .newsli {
-      a {
-          color: lightblue;
-      }
-  }
-}
-}
+
 /***End - footer***/
 
 /***Article pages***/
