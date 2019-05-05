@@ -1,14 +1,9 @@
 @charset "UTF-8";
 /**Ragnhild prøver no greier**/
-.padding, .containerPadding {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
-@media (max-width: 990px) {
+@media (min-width: 990px) {
   .padding, .containerPadding {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
@@ -55,13 +50,6 @@
 
 .customerStoryDescription {
   padding-bottom: 0px;
-}
-
-@media (max-width: 990px) {
-  .padding, .containerPadding {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }
 
 .kundeHistorierImage {
