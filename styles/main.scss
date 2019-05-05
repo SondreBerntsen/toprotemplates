@@ -71,7 +71,14 @@ header{
       padding-bottom: 5px;
       padding-left: 20px;
       padding-right: 20px;
+      font-weight: bolder;
       
+    }
+    .hrdrit{
+      margin: 0;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-color: gray;
     }
     .sidebarLink{
       display: block;
@@ -175,8 +182,9 @@ header{
   top: 0;
   left: 0;
   
-  
+
 }
+
 
 /***Contact persons***/
 .contactSection{
@@ -187,6 +195,7 @@ header{
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    max-width: 350px;
     .contactImg{
       border-radius: 50%;
     }

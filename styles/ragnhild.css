@@ -167,14 +167,11 @@
   width: 80px;
 }
 
-.servicesSection .serviceCatSection .catDescr {
+.servicesSection .serviceCatSection .serviceHeading {
+  font-size: 20px;
   width: 300px;
   min-height: 60px;
   margin: auto;
-}
-
-.servicesSection .serviceCatSection .catDescr .serviceHeading {
-  font-size: 20px;
 }
 
 .servicesSection .serviceCatSection .btnService {

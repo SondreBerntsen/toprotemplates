@@ -75,6 +75,14 @@ header {
   padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
+  font-weight: bolder;
+}
+
+.sideNavbar .sidebarContent .hrdrit {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-color: gray;
 }
 
 .sideNavbar .sidebarContent .sidebarLink {
@@ -200,6 +208,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px;
+  max-width: 350px;
 }
 
 .contactPerson .contactImg {

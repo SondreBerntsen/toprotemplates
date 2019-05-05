@@ -138,13 +138,11 @@
     .serviceCatIcon{
       width: 80px ;
       }
-    .catDescr{
-      width: 300px;
-      min-height: 60px;
-      margin: auto;
-      .serviceHeading{
+    .serviceHeading{
         font-size:20px ;
-      }
+        width: 300px;
+        min-height: 60px;
+        margin: auto;
     }
     .btnService{
       width: 290px;
