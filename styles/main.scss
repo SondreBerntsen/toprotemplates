@@ -268,13 +268,13 @@ header{
       font-size: 20px;
       text-align: center;
       padding: 10px;
-      color:white;
+      color:black;
       position: absolute;
-      top: 50%;
-      left: 50%;
+      bottom: -10px;
+      left: 110px;
       transform: translate(-50%, -50%);
-      background-color: #192E60;
-      min-width: 150px;
+      background-color: $secondary-color;
+      min-width: 180px;
     }
   }
 }
@@ -370,7 +370,7 @@ header{
 
 /* Sidebar collapse */
 @media (min-width:1200px) {
-  .openbtn,.blah, .sideNavbarCollapse {
+  .openbtn,.overlaySidebar, .sideNavbarCollapse {
     display: none;
   }
 }
@@ -397,7 +397,7 @@ header{
       }
     }
 }
-.blah{
+.overlaySidebar{
   background-color:rgba(0, 0, 0, 0.5);
   width: 0;
   height: 100vh;
