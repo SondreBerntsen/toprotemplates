@@ -5,8 +5,52 @@ $secondary-color: #e2e2e2;
 
 /**********END - COLORS**********/
 
+/* fonts */
+
+$fontfamily: 'Open Sans', sans-serif;
+$font-sizep: 1rem;
+$font-size1: 2.8rem;
+$font-size2: 1.6rem;
+$font-size3: 1.5rem;
+$font-size4: 1.1rem;
+$line-height1: 2rem;
+$h1space: 30px;
+$h2space: 20px;
+
+p {
+    font-family: $fontfamily;
+    font-size: $font-sizep;
+    line-height: $line-height1;
+}
+
+h1 {
+    font-family: $fontfamily;
+    margin-bottom: $h1space;
+    font-weight: lighter;
+}
+
+h2 {
+    font-family: $fontfamily;
+    margin-bottom: $h2space;
+    font-size: $font-size2;
+    font-weight: lighter;
+    line-height: 2.3rem;
+}
+
+h3 {
+    font-family: $fontfamily;
+    font-weight: lighter;
+    font-size: $font-size3;
+}
+
+h4 {
+    font-family: $fontfamily;
+    font-size: $font-size4;
+    font-weight: lighter;
+}
 /**********GENERAL**********/
-body{
+body {
+    font-family: $fontfamily;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -39,7 +83,7 @@ body{
   }
 }
 */
-.navbar{
+.navbar {
   /*border-bottom: 1px solid gray;*/
   box-shadow: 0px 15px 10px -20px #111;
   .logoImg{
@@ -48,7 +92,8 @@ body{
   li {
     margin-left : 0.5em;
     margin-right : 0.5em;
-    .navbarLink{
+    .navbarLink {
+      font-size: 1rem;
       color:black !important;
     }
   }
@@ -182,7 +227,7 @@ header{
       }
       .headertxtsub {
         font-weight: 300;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         line-height: 37.5px;
       }
     }
@@ -193,15 +238,15 @@ header{
   margin-bottom: 60px;
   .serviceCatSection{
     text-align: center;
-    margin-top: 60px;
     .serviceCatIcon{
-      width: 80px ;
+      width: 230px ;
     }
     .serviceHeading{
-        font-size:20px ;
-        width: 300px;
-        min-height: 60px;
-        margin: auto;
+      font-size: 1.8rem;
+      width: 300px;
+      min-height: 60px;
+      margin: auto;
+      margin-bottom: 15px;
     }
     .btnService{
       width: 290px;
@@ -229,7 +274,6 @@ header{
   }
   .totaldeliveryTxt{ 
     margin: auto;
-    padding:20px;
     max-width: 900px;
   }
   .imgDesktopVisible{
@@ -281,21 +325,22 @@ header{
 .newsSection{
   margin-top: 30px;
   @extend .padding;
-  h2{
-    padding:20px;
-  }
+
   .newsArticleSection{
     margin-bottom: 30px;
     position: relative;
     color:black;
+    
     .newsSectionHeading{
-      font-size: 18px;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
       margin-top: 10px;
     }
+    
     &:hover {
-      cursor: pointer;
       text-decoration: none;
     }
+    
     .newsThumbnail{
       width: 100%;
     }
@@ -305,7 +350,7 @@ header{
     }
     .dateNewsArticle{
       font-size: 14px;
-      margin-bottom: 0;
+      margin-bottom: 5px;
     }
   }
 }
@@ -405,6 +450,11 @@ header{
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.expandbutton {
+  background-color: #0b1a2e;
+  margin-bottom: 20px;
 }
 /***End - Sidebar***/
 

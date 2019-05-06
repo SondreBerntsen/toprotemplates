@@ -1,7 +1,41 @@
 /**********COLORS**********/
 /**********END - COLORS**********/
+/* fonts */
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  font-weight: lighter;
+  line-height: 2.3rem;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
 /**********GENERAL**********/
 body {
+  font-family: "Open Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,6 +94,7 @@ body main {
 }
 
 .navbar li .navbarLink {
+  font-size: 1rem;
   color: black !important;
 }
 
@@ -209,7 +244,7 @@ header .txtHeader .headertxtmain {
 
 header .txtHeader .headertxtsub {
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 37.5px;
 }
 
@@ -220,18 +255,18 @@ header .txtHeader .headertxtsub {
 
 .servicesSection .serviceCatSection {
   text-align: center;
-  margin-top: 60px;
 }
 
 .servicesSection .serviceCatSection .serviceCatIcon {
-  width: 80px;
+  width: 230px;
 }
 
 .servicesSection .serviceCatSection .serviceHeading {
-  font-size: 20px;
+  font-size: 1.8rem;
   width: 300px;
   min-height: 60px;
   margin: auto;
+  margin-bottom: 15px;
 }
 
 .servicesSection .serviceCatSection .btnService {
@@ -261,7 +296,6 @@ header .txtHeader .headertxtsub {
 
 .totalDeliverySection .totaldeliveryTxt {
   margin: auto;
-  padding: 20px;
   max-width: 900px;
 }
 
@@ -318,10 +352,6 @@ header .txtHeader .headertxtsub {
   margin-top: 30px;
 }
 
-.newsSection h2 {
-  padding: 20px;
-}
-
 .newsSection .newsArticleSection {
   margin-bottom: 30px;
   position: relative;
@@ -329,12 +359,12 @@ header .txtHeader .headertxtsub {
 }
 
 .newsSection .newsArticleSection .newsSectionHeading {
-  font-size: 18px;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
   margin-top: 10px;
 }
 
 .newsSection .newsArticleSection:hover {
-  cursor: pointer;
   text-decoration: none;
 }
 
@@ -349,7 +379,7 @@ header .txtHeader .headertxtsub {
 
 .newsSection .newsArticleSection .dateNewsArticle {
   font-size: 14px;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 /**********END - FRONT PAGE**********/
@@ -445,6 +475,11 @@ header .txtHeader .headertxtsub {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.expandbutton {
+  background-color: #0b1a2e;
+  margin-bottom: 20px;
 }
 
 /***End - Sidebar***/
