@@ -304,14 +304,14 @@ header .txtHeader .headertxtsub {
   font-size: 20px;
   text-align: center;
   padding: 10px;
-  color: white;
+  color: black;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  bottom: -10px;
+  left: 110px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #192E60;
-  min-width: 150px;
+  background-color: #e2e2e2;
+  min-width: 180px;
 }
 
 .newsSection {
@@ -406,7 +406,7 @@ header .txtHeader .headertxtsub {
 
 /* Sidebar collapse */
 @media (min-width: 1200px) {
-  .openbtn, .blah, .sideNavbarCollapse {
+  .openbtn, .overlaySidebar, .sideNavbarCollapse {
     display: none;
   }
 }
@@ -437,7 +437,7 @@ header .txtHeader .headertxtsub {
   text-decoration: none;
 }
 
-.blah {
+.overlaySidebar {
   background-color: rgba(0, 0, 0, 0.5);
   width: 0;
   height: 100vh;

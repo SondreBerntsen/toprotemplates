@@ -219,8 +219,7 @@
                                 <div class='alert alert-success'> <strong>Sendt!</strong> Takk for melding. Vi
                                     svarer deg så fort vi kan!</a></div>
                             </div>
-                            <button type="button" class="btn btn-success" id="sendMail"
-                                onClick="sendMail()">Send</button>
+                            <button type="button" class="btn btn-success" id="sendMail">Send</button>
 
                         </div>
                     </div>
@@ -229,7 +228,7 @@
         </div>
     </main>
     <!-- Sidebar collapse -->
-    <a href="#" onclick="closeNav()" class="blah" id="bleh">
+    <a href="#" onclick="closeNav()" class="overlaySidebar" id="darkOverlay">
         <section class="sideNavbarCollapse " id="sideNavbarC">
             <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
             <h4 class="sidebarHeading">Vi tilbyr</h4>
@@ -303,21 +302,12 @@
     /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
     function openNav() {
         document.getElementById("sideNavbarC").style.width = "290px";
-        document.getElementById("bleh").style.width = "100%";
+        document.getElementById("darkOverlay").style.width = "100%";
     }
     /* Set the width of the sidebar to 0 */
     function closeNav() {
         document.getElementById("sideNavbarC").style.width = "0";
-        document.getElementById("bleh").style.width = "0";
+        document.getElementById("darkOverlay").style.width = "0";
     }
-    function sendMail() {
-        var h = document.getElementById('success');
-        h.removeAttribute("hidden", true);
-        document.getElementById('sendMail').style.display = "none";
-    }
-    $('#contactModal').on('hidden.bs.modal', function (e) {
-        var h = document.getElementById('success');
-        h.setAttribute("hidden", true);
-        document.getElementById('sendMail').style.display = "block";
-    })
+
 </script>
