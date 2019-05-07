@@ -59,7 +59,7 @@ body main {
 }
 
 @media (min-width: 990px) {
-  .padding, footer, .totalDeliverySection, .valuesSection, .newsSection {
+  .padding, footer, .totalDeliverySection, .valuesSection, .newsSection, .articleContainer {
     padding-left: 70px;
     padding-right: 70px;
   }
@@ -82,6 +82,7 @@ body main {
   /*border-bottom: 1px solid gray;*/
   -webkit-box-shadow: 0px 15px 10px -20px #111;
           box-shadow: 0px 15px 10px -20px #111;
+  background-color: white;
 }
 
 .navbar .logoImg {
@@ -213,8 +214,8 @@ footer .footerSection .newsul .newsli a {
 /**********END - GENERAL**********/
 /**********FRONT PAGE**********/
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 30, 78, 0.589)), to(rgba(7, 30, 78, 0.589))), url(../images/headerimg6.jpg);
-  background: linear-gradient(rgba(7, 30, 78, 0.589), rgba(7, 30, 78, 0.589)), url(../images/headerimg6.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 30, 78, 0.589)), to(rgba(7, 30, 78, 0.589))), url(../images/headerImg.jpg);
+  background: linear-gradient(rgba(7, 30, 78, 0.589), rgba(7, 30, 78, 0.589)), url(../images/headerImg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -258,11 +259,11 @@ header .txtHeader .headertxtsub {
 }
 
 .servicesSection .serviceCatSection .serviceCatIcon {
-  width: 230px;
+  width: 200px;
 }
 
 .servicesSection .serviceCatSection .serviceHeading {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   width: 300px;
   min-height: 60px;
   margin: auto;
@@ -279,6 +280,10 @@ header .txtHeader .headertxtsub {
   margin: auto;
   margin-bottom: 5px;
   border-radius: 0px;
+}
+
+.servicesSection .serviceCatSection .btnService:hover {
+  background-color: #3c5daa;
 }
 
 .totalDeliverySection {
@@ -324,7 +329,6 @@ header .txtHeader .headertxtsub {
 }
 
 .valuesSection .value {
-  /**background: rgb(7, 30, 78, 0.589);**/
   padding: 20px;
 }
 
@@ -483,6 +487,22 @@ header .txtHeader .headertxtsub {
 }
 
 /***End - Sidebar***/
+/***Article pages***/
+.articleContainer {
+  margin-top: 30px;
+}
+
+.classtest {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.article {
+  line-height: 1.8;
+  padding-right: 50px;
+}
+
+/***End - Article pages***/
 /***Contact persons***/
 .contactSection {
   margin-top: 20px;

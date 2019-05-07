@@ -86,6 +86,7 @@ body {
 .navbar {
   /*border-bottom: 1px solid gray;*/
   box-shadow: 0px 15px 10px -20px #111;
+  background-color: white;
   .logoImg{
     height: 50px;
   }
@@ -205,7 +206,7 @@ header{
       rgba(7, 30, 78, 0.589)
     ),
     /* bottom, image */
-    url(../images/headerimg6.jpg);
+    url(../images/headerImg.jpg);
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -239,10 +240,10 @@ header{
   .serviceCatSection{
     text-align: center;
     .serviceCatIcon{
-      width: 230px ;
+      width: 200px ;
     }
     .serviceHeading{
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       width: 300px;
       min-height: 60px;
       margin: auto;
@@ -258,7 +259,11 @@ header{
       margin: auto;
       margin-bottom: 5px;
       border-radius: 0px;
+      &:hover{
+        background-color: rgb(60, 93, 170);
+      }
     }
+    
   }
 }
 .totalDeliverySection{
@@ -302,12 +307,15 @@ header{
   margin-top: 50px;
   @extend .padding;
   .value{
-    /**background: rgb(7, 30, 78, 0.589);**/
     padding: 20px;
+   
+    
     img{/*fix*/
       width: 100%;
       height: 250px;
+     
     }
+    
     .valueHeading{
       font-size: 20px;
       text-align: center;
@@ -457,7 +465,22 @@ header{
   margin-bottom: 20px;
 }
 /***End - Sidebar***/
-
+/***Article pages***/
+.articleContainer{
+  margin-top:30px;
+  @extend .padding;
+ }
+ .classtest{
+   font-weight: bold;
+   text-decoration: underline;
+ }
+ .article{
+   
+   line-height: 1.8;
+   padding-right:50px;
+ }
+ 
+ /***End - Article pages***/
 /***Contact persons***/
 .contactSection{
     margin-top: 20px;
