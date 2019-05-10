@@ -489,11 +489,32 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
     max-width: 350px;
     .contactImg{
       border-radius: 50%;
     }
+    button{
+      margin-top: 10px;
+    }
   }
-
   /***End - contact persons****/
+
+ 
+  .breadcrumb{
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 55px;
+  }
+  .serviceTagSection{
+    padding:70px;
+    .serviceTag{
+      margin: 5px;
+      border-color: #192E60;
+      color:#192E60;
+      &:hover {
+        background-color: #192E60;
+        color:white;
+      }
+    }
+  }

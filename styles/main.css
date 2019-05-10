@@ -518,7 +518,7 @@ header .txtHeader .headertxtsub {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
   max-width: 350px;
 }
 
@@ -526,5 +526,29 @@ header .txtHeader .headertxtsub {
   border-radius: 50%;
 }
 
+.contactPerson button {
+  margin-top: 10px;
+}
+
 /***End - contact persons****/
+.breadcrumb {
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 55px;
+}
+
+.serviceTagSection {
+  padding: 70px;
+}
+
+.serviceTagSection .serviceTag {
+  margin: 5px;
+  border-color: #192E60;
+  color: #192E60;
+}
+
+.serviceTagSection .serviceTag:hover {
+  background-color: #192E60;
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */
