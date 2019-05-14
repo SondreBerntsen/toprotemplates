@@ -33,248 +33,178 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-            <img class="logoImg" src="images/logo.PNG" alt="logo">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
-            aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="#"><img class="logoImg" src="images/icons/logo.PNG" alt="logo"></a>
+        <div>
+            <img class="iconSearch iconSearch2" src="images/icons/searchicon.png" class="navbar-toggler"
+                data-toggle="collapse" data-target="#toggleSearchbar" aria-controls="toggleSearchbar"
+                aria-expanded="false" aria-label="Toggle navigation" />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="searchbar collapse" id="toggleSearchbar">
+            <form class="form-inline " action="sok.html">
+                <input class="form-control " type="search" placeholder="Søk" aria-label="Search">
+                <button class="btn btn-secondary " type="submit">Søk</button>
+            </form>
+        </div>
         <div class="collapse navbar-collapse my-2 my-lg-0" id="navbarToggle">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link navbarLink" href="index.html">Hjem</a>
                 </li>
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle navbarLink" href="#" id="serviceDropdownMenuLink" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tjenester</a>
-
-                    <div class="dropdown-menu" aria-labelledby="serviceDropdownMenuLink">
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tjenester
+                    </a>
+                    <div class="dropdown-menu dropdownSection" aria-labelledby="serviceDropdownMenuLink">
                         <a class="dropdown-item" href="tjeneste.html">Rådgiving</a>
-
                         <a class="dropdown-item" href="tjeneste.html">Ekspertise og erfaringer</a>
-
                         <a class="dropdown-item" href="tjeneste.html">Prototype</a>
-
-                        <a class="dropdown-item" href="tjeneste.html">
-                            Tilretteleggelse for serieproduksjon
-                        </a>
-
+                        <a class="dropdown-item" href="tjeneste.html">Tilretteleggelse for serieproduksjon</a>
                         <a class="dropdown-item" href="tjeneste.html">Kredskortproduksjon</a>
-
-                        <a class="dropdown-item" href="tjeneste.html">
-                            Elektromekanisk sammenstilling
-                        </a>
-
+                        <a class="dropdown-item" href="tjeneste.html">Elektromekanisk sammenstilling</a>
                         <a class="dropdown-item" href="tjeneste.html">Testing</a>
-
                         <a class="dropdown-item" href="tjeneste.html">Innkjøp</a>
-
                         <a class="dropdown-item" href="tjeneste.html">Lager</a>
-
                         <a class="dropdown-item" href="tjeneste.html">Logistikk</a>
                     </div>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link navbarLink" href="kundehistorier.html">Kundehistorier</a>
+                    <a class="nav-link navbarLink" href="kundehistorier.html"> Kundehistorier </a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link navbarLink" href="karriere.html">Karriere</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link navbarLink" href="nyheter.html">Nyheter</a>
                 </li>
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle navbarLink" href="#" id="aboutDropdownMenuLink" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Om oss</a>
-
-                    <div class="dropdown-menu" aria-labelledby="aboutDropdownMenuLink">
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Om oss
+                    </a>
+                    <div class="dropdown-menu dropdownSection" aria-labelledby="aboutDropdownMenuLink">
                         <a class="dropdown-item" href="omoss.html">Historie</a>
-
                         <a class="dropdown-item" href="omoss.html">Miljø og etikk</a>
-
                         <a class="dropdown-item" href="omoss.html">Kvalitetssikring</a>
-
                         <a class="dropdown-item" href="omoss.html">Samarbeidspartnere</a>
-
                         <a class="dropdown-item" href="omoss.html">Sertifiseringer</a>
                     </div>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link navbarLink" href="english.html">English</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link navbarLink" href="kontakt.html">Kontakt</a>
                 </li>
                 <li>
-                    <img class="iconSearch" src="images/iconSearch.PNG" class="navbar-toggler" data-toggle="collapse"
-                        data-target="#toggleSearchbar" aria-controls="toggleSearchbar" aria-expanded="false"
-                        aria-label="Toggle navigation" />
+                    <img class="iconSearch iconSearch1" src="images/icons/searchicon.png" class="navbar-toggler"
+                        data-toggle="collapse" data-target="#toggleSearchbar" aria-controls="toggleSearchbar"
+                        aria-expanded="false" aria-label="Toggle navigation" />
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="collapse searchbar" id="toggleSearchbar">
-        <form class="form-inline">
-            <input class="form-control" type="search" placeholder="Søk" aria-label="Search"></input>
-
-            <button class="btn btn-secondary" type="submit">Søk</button>
-        </form>
-    </div>
-
     <main>
-        <div class="container containerPadding">
-            <div class="row title">
-                <div class="col-md-12">
-                    <!-- page title -->
+        <div class="container">
 
-                    <h1 class="ContactTitle">English</h1>
-                </div>
-            </div>
-            <div class="row">
-                <article class="col-md-12">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-                        rerum cum possimus
-                        doloribus. Eveniet enim, ut molestiae natus, dicta, at ipsa tempore et dolorem voluptas Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur ipsa dolorum praesentium eos
-                        fuga deleniti sint alias asperiores! Facilis nam ad quisquam soluta quo, illo harum ipsum at
-                        asperiores.
-                    </p>
-                </article>
-            </div>
-            <div class="row">
-
-                <article class="col-md-12">
-                    <h2 class="ContactTitle">Our services</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-                        rerum cum possimus
-                        doloribus. Eveniet enim, ut molestiae natus, dicta, at ipsa tempore et dolorem voluptas
-                        eaque sequi magni! Sequi, quos? Lorem Lorem ipsum dolor sit, amet </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-                        rerum cum possimus
-                        doloribus. Eveniet enim, ut molestiae natus, dicta, at ipsa tempore et dolorem voluptas
-                        eaque sequi magni! Sequi, quos? Lorem Lorem ipsum dolor sit, amet </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-                        rerum cum possimus
-                        doloribus. Eveniet enim, ut molestiae natus, dicta, at ipsa tempore et dolorem voluptas
-                        eaque sequi magni! Sequi, quos? Lorem Lorem ipsum dolor sit, amet consectetur </p>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="ContactTitle">Total-delivery</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum
-                                reiciendis voluptatem quis beatae, voluptatibus, quae saepe ab eligendi esse maxime.
-                                Molestiae asperiores ipsum doloribus mollitia et soluta illo aliquid. Lorem, ipsum dolor
-                                sit amet consectetur adipisicing elit. Earum itaque atque repellendus placeat iste at
-                                cumque vitae corrupti aliquam maxime? Ipsum modi sequi esse ab. Ad culpa magnam in
-                                repellat? </p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-
-            <!-- contact -->
-            <!-- page title & description -->
-            <div class="row">
-                <div class="col-md-12">
-
-
-                    <h2 class="ContactTitle">Contact us</h2>
-                    <p class="p">We are always ready for a talk! Send us an email.</p>
-                </div>
-            </div>
-
-            <!-- Contact form, contact page -->
-            <form class="ContactPageForm">
-
-
-
+            <article class="col-lg-10 articleEnglish">
+                <h1 class="headingTop">English</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                    rerum cum possimus
+                    doloribus. Eveniet enim, ut molestiae natus, dicta, at ipsa tempore et dolorem voluptas Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur ipsa dolorum praesentium eos
+                    fuga deleniti sint alias asperiores! Facilis nam ad quisquam soluta quo, illo harum ipsum at
+                    asperiores.
+                </p>
+                <h2>Somethings</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                    rerum cum possimus
+                    doloribus. Eveniet enim, ut molestiae natus, dicta, at ipsa tempore et dolorem voluptas Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur ipsa dolorum praesentium eos
+                    fuga deleniti sint alias asperiores! Facilis nam ad quisquam soluta quo, illo harum ipsum at
+                    asperiores.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                    rerum cum possimus
+                    doloribus. Eveniet enim, ut molestiae natus, dicta, at ipsa tempore et dolorem voluptas Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur ipsa dolorum praesentium eos
+                    fuga deleniti sint alias asperiores! Facilis nam ad quisquam soluta quo, illo harum ipsum at
+                    asperiores.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                    rerum cum possimus
+                    doloribus. Eveniet enim, ut molestiae natus, dicta, at ipsa tempore et dolorem voluptas Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur ipsa dolorum praesentium eos
+                    fuga deleniti sint alias asperiores! Facilis nam ad quisquam soluta quo, illo harum ipsum at
+                    asperiores.
+                </p>
+            </article>
+            <form class="contactForm col-lg-10">
+                <h1>Contact us</h1>
                 <div class="row">
                     <div class="col form-group">
-                        <input type="text" class="form-control" placeholder="Name...">
+                        <input type="text" class="form-control" id="nameInput" placeholder="Navn...">
                     </div>
+                </div>
+                <div class="row">
                     <div class="col form-group">
-                        <input type="email" class="form-control" placeholder="Email...">
+                        <input type="email" class="form-control" id="emailInput" placeholder="Epost...">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col form-group">
                         <select id="inputState" class="form-control">
-                            <option selected>Choose subject</option>
-                            <option>General questions</option>
-                            <option>Get help with your project</option>
-                            <option>Development of prototypes</option>
-                            <option>NPI</option>
-                            <option>Electromechanical alignment</option>
-                            <option>Logistics</option>
-                            <option>Other</option>
+                            <option selected>Velg emne</option>
+                            <option>Generelle spørsmål</option>
+                            <option>Få hjelp med ditt prosjekt</option>
+                            <option>Prototypeutvikling</option>
+                            <option>Tilretteleggelse for serieproduksjon</option>
+                            <option>Elektromekanisk sammenstilling</option>
+                            <option>Logistikk</option>
+                            <option>Annet</option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col form-group">
                         <textarea type="text" rows="5" class="form-control textarea"
-                            placeholder="Message..."></textarea>
+                            placeholder="Melding..."></textarea>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary ContactPageButton">Send</button>
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-success float-right">Send</button>
                     </div>
                 </div>
-
-
             </form>
-
-
         </div>
-
-
     </main>
-
     <footer>
         <div class="container">
             <div class="row">
                 <div class="footerSection col-md-4">
                     <h4>Kontakt oss</h4>
-
-                    <p>
-                        Vi er alltid klar for en uforpliktende samtale, eller uansett spørsmål du kan tenke deg til.
-                    </p>
-
+                    <p>Vi er alltid klar for en uforpliktende samtale, eller uansett spørsmål du kan tenke deg til.</p>
                     <button class="btn btn-outline-light">Kontakt oss</button>
                 </div>
-
-                <div class="footerSection col-md-4">
+                <div class=" footerSection col-md-4">
                     <h4>Nyheter</h4>
-
-                    <p>Topro havner i avisen igjen!</p>
-
-                    <p>Kjempe gøy nyhet</p>
-
-                    <p>Dette må du lese!</p>
+                    <ul class="newsul">
+                        <li class="newsli"><a href="#">Topro havner i avisen igjen!</a></li>
+                        <li class="newsli"><a href="#">Enda en nyhet!</a></li>
+                        <li class="newsli"><a href="#">Dette bare må du lese.</a></li>
+                    </ul>
                 </div>
-
-                <div class="footerSection col-md-4">
+                <div class=" footerSection col-md-4">
                     <h4>Følg oss</h4>
-
                     <div class="row">
-                        <img src="images/facebook.png">
-                        <img src="images/facebook.png">
-                        <img src="images/facebook.png">
+                        <img class="footericon" src="images/icons/1x/fbicon.png" />
+                        <img class="footericon" src="images/icons/1x/inicon.png" />
+                        <img class="footericon" src="images/icons/1x/yticon.png" />
                     </div>
                 </div>
             </div>

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <a class="navbar-brand" href="index.html"><img class="logoImg" src="images/logo.PNG" alt="logo"></a>
         <div>
             <img class="iconSearch iconSearch2" src="images/iconSearch.PNG" class="navbar-toggler"
@@ -128,7 +128,7 @@
 
 
                 <!-- Sidebar -->
-                <aside class=" col-lg-4">
+                <aside class="col-sm-8 col-md-6 col-lg-4">
                     <section class="sideNavbar">
                         <h3 class="sidebarHeading">Vi tilbyr</h3>
                         <div class="sidebarContent">
@@ -151,26 +151,24 @@
                         </div>
                     </section>
                     <section class="contactSection">
-                        <h2>Ta kontakt med en selger for mer info</h2>
-                        <section class="contactPerson row">
-                            <img class="contactImg img-fluid col-6" src="images/contactImg.PNG" />
-                            <div class="contactInfo col-6">
+                        <h2>Ta kontakt med oss</h2>
+                        <section class="contactPerson">
+                            <img class="contactImg img-fluid" src="images/mads.PNG" />
+                            <div class="contactInfo">
                                 <h4>Liam Hemsworth</h4>
-                                <span>Amazing</span>
-
-                                <button class="btn btn-success btn-sm" data-toggle="modal"
-                                    data-target="#contactModal">Send
+                                <p>Salgssjef elektronikk</p>
+                                <button class="btn btn-sm" data-toggle="modal" data-target="#contactModal"><img
+                                        class="img-fluid" src="images/icons/mailIcon.png" />Send
                                     E-post</button>
                             </div>
                         </section>
-                        <section class="contactPerson row">
-                            <img class="contactImg img-fluid col-6" src="images/contactImg.PNG" />
-                            <div class="contactInfo col-6">
+                        <section class="contactPerson">
+                            <img class="contactImg img-fluid" src="images/mads.PNG" />
+                            <div class="contactInfo">
                                 <h4>Liam Hemsworth</h4>
-                                <span>Amazing</span>
-
-                                <button class="btn btn-success btn-sm" data-toggle="modal"
-                                    data-target="#contactModal">Send
+                                <p>Salgssjef elektronikk</p>
+                                <button class="btn btn-sm" data-toggle="modal" data-target="#contactModal"><img
+                                        class="img-fluid" src="images/icons/mailIcon.png" />Send
                                     E-post</button>
                             </div>
                         </section>
@@ -285,6 +283,7 @@
         </div>
     </footer>
 
+    <script src="js/sidebar.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -298,17 +297,3 @@
 </body>
 
 </html>
-
-<script>
-    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-    function openNav() {
-        document.getElementById("sideNavbarC").style.width = "290px";
-        document.getElementById("darkOverlay").style.width = "100%";
-    }
-    /* Set the width of the sidebar to 0 */
-    function closeNav() {
-        document.getElementById("sideNavbarC").style.width = "0";
-        document.getElementById("darkOverlay").style.width = "0";
-    }
-
-</script>

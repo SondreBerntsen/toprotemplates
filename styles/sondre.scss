@@ -1,18 +1,4 @@
-/**Ragnhild prøver no greier**/
 
-  @media (min-width:990px) {
-    .padding{
-      padding-left:70px;
-      padding-right:70px;
-    }
-  }
-
-/*
-.customerStoryPage{
-    @extend .padding;
-}*/
-
-/* Kontakt page */
 
 .contact-description {
     font-family: Arial, Helvetica, sans-serif;
@@ -33,9 +19,6 @@
     padding-top: 60px;
 }
 
-.ContactPageForm {
-    width: 60vw;
-}
 
 .ContactPageButton {
     background-color: #2377BD;
@@ -56,9 +39,6 @@
     padding-bottom: 0px;
 }
 
-.containerPadding {
-    @extend .padding;
-}
 
 .kundeHistorierImage {
     width: 100%;
@@ -119,27 +99,8 @@
 
 /* 404 errorpage */
 
-.errorcontainer {
-    text-align: center;
-}
 
-.errortitle {
-    font-size: 4.5rem;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-.errortext {
-    font-size: 2rem;
-}
 
-.errorlink {
-    font-size: 2rem;
-}
-
-.errorimage {
-    width: 210px;
-    padding-top: 40px;
-}
 
 
 

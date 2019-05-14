@@ -96,6 +96,7 @@
             </ul>
             <div class="articleContainer row">
                 <article class="article col-lg-8">
+                    <button class="openbtn btn btn-info expandbutton" onclick="openNav()">Flere tjenester</button>
                     <h1>Topro havner i avisen igjen!</h1>
                     <h2>Topro har bidrat med kunskap og erfaring som har ført til utvikling av "ting"</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -142,7 +143,20 @@
             </section>
         </div>
     </main>
-    
+    <a href="#" onclick="closeNav()" class="overlaySidebar" id="darkOverlay">
+        <section class="sideNavbarCollapse " id="sideNavbarC">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <h4 class="sidebarHeading">Siste nyheter</h4>
+            <div class="sidebarContent">
+                <a class="sidebarLink" href="#">En nyhetsartikkel</a>
+                <a class="sidebarLink" href="#">En nyhetsartikkel</a>
+                <a class="sidebarLink" href="#">En nyhetsartikkel</a>
+                <a class="sidebarLink" href="#">En nyhetsartikkel</a>
+                <a class="sidebarLink" href="#">En nyhetsartikkel</a>
+                <a class="sidebarLink" href="#">En nyhetsartikkel</a>
+            </div>
+        </section>
+    </a>
     <footer>
         <div class="container">
             <div class="row">
@@ -171,6 +185,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/sidebar.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

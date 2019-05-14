@@ -92,23 +92,37 @@
     <main>
         <div class="container">
             <!-- page title & description -->
-            <h1 class="ContactTitle">Kontakt oss</h1>
-            <p>Vi er alltid klar for en prat, ring oss eller send en epost, uansett hva det
-                skulle være du lurer på. Ta gjerne kontakt med en av våre dyktige medarbeidere, under finner du en
+            <h1 class="headingTop text-center ">Kontakt oss</h1>
+
+            <!--<h2 class="text-center">Send e-post</h2>-->
+            <p class="text-center col-lg-10" style="margin:auto; margin-bottom:20px;">Vi er alltid klar for en prat,
+                ring oss eller send en
+                epost, uansett hva
+                det
+                skulle være du lurer på. Ta gjerne kontakt med en av våre dyktige medarbeidere, under finner du
+                en
                 oversikt over teamet vårt.</p>
 
-            <!-- Contact form, contact page -->
-            <form class="ContactPageForm">
+
+
+
+            <form class="contactForm col-lg-10">
+
                 <div class="row">
                     <div class="col form-group">
-                        <input type="text" class="form-control" placeholder="Navn...">
-                    </div>
-                    <div class="col form-group">
-                        <input type="email" class="form-control" placeholder="Epost...">
+
+                        <input type="text" class="form-control" id="nameInput" placeholder="Navn...">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col form-group">
+
+                        <input type="email" class="form-control" id="emailInput" placeholder="Epost...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-group">
+
                         <select id="inputState" class="form-control">
                             <option selected>Velg emne</option>
                             <option>Generelle spørsmål</option>
@@ -128,74 +142,97 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary ContactPageButton">Send</button>
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-success float-right">Send</button>
                     </div>
                 </div>
             </form>
 
-            <!-- Contact persons -->
-
 
 
             <section class="contactSection row">
-                <h2 class="ContactSubtitle col-12">Møt Teamet</h2>
-                <section class="col-md-6 col-lg-4">
-                    <section class="contactPerson row  ">
-                        <img class="contactImg img-fluid col-6" src="images/contactImg.PNG" />
-                        <div class="contactInfo col-6">
-                            <h4>Liam Hemsworth</h4>
-                            <span>Salgssjef elektronikk</span>
-                            <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#contactModal">Send
-                                E-post</button>
-                        </div>
-                    </section>
-                </section>
-                <section class="col-md-6 col-lg-4">
-                    <section class="contactPerson row  ">
-                        <img class="contactImg img-fluid col-6" src="images/contactImg.PNG" />
-                        <div class="contactInfo col-6">
-                            <h4>Liam Hemsworth</h4>
-                            <span>Salgsingeniør elektronikkproduksjon</span>
-                            <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#contactModal">Send
-                                E-post</button>
-                        </div>
-                    </section>
-                </section>
-                <section class="col-md-6 col-lg-4">
-                    <section class="contactPerson row  ">
-                        <img class="contactImg img-fluid col-6" src="images/contactImg.PNG" />
-                        <div class="contactInfo col-6">
-                            <h4>Liam Hemsworth</h4>
-                            <span>Administrerende direktør (CEO) – TOPRO Elektronikk AS</span>
-                            <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#contactModal">Send
-                                E-post</button>
-                        </div>
-                    </section>
-                </section>
-                <section class="col-md-6 col-lg-4">
-                    <section class="contactPerson row  ">
-                        <img class="contactImg img-fluid col-6" src="images/contactImg.PNG" />
-                        <div class="contactInfo col-6">
-                            <h4>Liam Hemsworth</h4>
-                            <span>Amazing</span>
-                            <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#contactModal">Send
-                                E-post</button>
-                        </div>
-                    </section>
-                </section>
-                <section class="col-md-6 col-lg-4">
-                    <section class="contactPerson row  ">
-                        <img class="contactImg img-fluid col-6" src="images/contactImg.PNG" />
-                        <div class="contactInfo col-6">
-                            <h4>Liam Hemsworth</h4>
-                            <span>Amazing</span>
-                            <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#contactModal">Send
-                                E-post</button>
-                        </div>
-                    </section>
-                </section>
+                <h1 class="ContactSubtitle col-12 text-center">Møt Teamet</h1>
 
+                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                    <img class="contactImg img-fluid" src="images/contactImg.PNG" />
+                    <div class="contactInfo">
+                        <h4>Liam Hemsworth</h4>
+                        <p>Salgssjef elektronikk</p>
+                        <button class="btn btn-sm" data-toggle="modal" data-target="#contactModal"><img
+                                class="img-fluid" src="images/icons/mailIcon.png" />Send
+                            E-post</button>
+                    </div>
+                </section>
+                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                    <img class="contactImg img-fluid" src="images/sondre.PNG" />
+                    <div class="contactInfo">
+                        <h4>Liam Hemsworth</h4>
+                        <p>Salgssjef elektronikk</p>
+                        <button class="btn btn-sm" data-toggle="modal" data-target="#contactModal"><img
+                                class="img-fluid" src="images/icons/mailIcon.png" />Send
+                            E-post</button>
+                    </div>
+                </section>
+                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                    <img class="contactImg img-fluid" src="images/mads.PNG" />
+                    <div class="contactInfo">
+                        <h4>Liam Hemsworth</h4>
+                        <p>Salgssjef elektronikk</p>
+                        <button class="btn btn-sm" data-toggle="modal" data-target="#contactModal"><img
+                                class="img-fluid" src="images/icons/mailIcon.png" />Send
+                            E-post</button>
+                    </div>
+                </section>
+                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                    <img class="contactImg img-fluid" src="images/elisabeth.PNG" />
+                    <div class="contactInfo">
+                        <h4>Liam Hemsworth</h4>
+                        <p>Salgssjef elektronikk</p>
+                        <button class="btn btn-sm" data-toggle="modal" data-target="#contactModal"><img
+                                class="img-fluid" src="images/icons/mailIcon.png" />Send
+                            E-post</button>
+                    </div>
+                </section>
+                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                    <img class="contactImg img-fluid" src="images/contactImg.PNG" />
+                    <div class="contactInfo">
+                        <h4>Liam Hemsworth</h4>
+                        <p>Salgssjef elektronikk</p>
+                        <button class="btn btn-sm" data-toggle="modal" data-target="#contactModal"><img
+                                class="img-fluid" src="images/icons/mailIcon.png" />Send
+                            E-post</button>
+                    </div>
+                </section>
+                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                    <img class="contactImg img-fluid" src="images/sondre.PNG" />
+                    <div class="contactInfo">
+                        <h4>Liam Hemsworth</h4>
+                        <p>Salgssjef elektronikk</p>
+                        <button class="btn btn-sm" data-toggle="modal" data-target="#contactModal"><img
+                                class="img-fluid" src="images/icons/mailIcon.png" />Send
+                            E-post</button>
+                    </div>
+                </section>
+                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                    <img class="contactImg img-fluid" src="images/mads.PNG" />
+                    <div class="contactInfo">
+                        <h4>Liam Hemsworth</h4>
+                        <p>Salgssjef elektronikk</p>
+                        <button class="btn btn-sm" data-toggle="modal" data-target="#contactModal"><img
+                                class="img-fluid" src="images/icons/mailIcon.png" />Send
+                            E-post</button>
+                    </div>
+                </section>
+                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                    <img class="contactImg img-fluid" src="images/elisabeth.PNG" />
+                    <div class="contactInfo">
+                        <h4>Liam Hemsworth</h4>
+                        <p>Salgssjef elektronikk</p>
+                        <button class="btn btn-sm" data-toggle="modal" data-target="#contactModal"><img
+                                class="img-fluid" src="images/icons/mailIcon.png" />Send
+                            E-post</button>
+                    </div>
+                </section>
             </section>
 
         </div>

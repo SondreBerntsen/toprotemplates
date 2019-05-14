@@ -1,71 +1,3 @@
-/*Dette er ikke ferdig. Skal fikse koden slik at den ser mer ryddig ut.*/
-/*Må lage varibaler til farger, skriftstørrelser, eventuelt avstander*/
-/*FIX Noen JS greier funker ikke i Exlporer*/
-/*Tjeneste greia ser litt funky ut responsiv*/
-/*Searchbar trenger en real FFFFIIIXXX*/
-
-/***Masse rot***/
-
-
-
-
-.breadcrumb{
-  background-color: white;
-  margin-top: 10px;
-  margin-left: 55px;
-}
-.serviceTagSection{
-  padding:70px;
-  .serviceTag{
-    margin: 5px;
-    border-color: #192E60;
-    color:#192E60;
-    &:hover {
-      background-color: #192E60;
-      color:white;
-    }
-  }
-}
-.heading1{
-  padding:10px;
-  padding-bottom: 30px;
-}
-/***End - masse rot***/
-.padding{
-  padding-left:70px;
-  padding-right:70px;
-}
-
-@media (max-width:990px) {
-  .padding{
-    padding-left:5px;
-    padding-right:5px;
-  }
-}
-
-/***Footer***/
-
-/***End - footer***/
-
-/***Article pages***/
-.articleContainer{
- margin-top:30px;
- @extend .padding;
-}
-.classtest{
-  font-weight: bold;
-  text-decoration: underline;
-}
-.article{
-  
-  line-height: 1.8;
-  padding-right:50px;
-}
-
-/***End - Article pages***/
-
-
-
 
 
 /***News page***/
@@ -94,37 +26,7 @@
   top: 0px;
 }*/
 
-/***Search page***/
-.searchSection{
-  @extend .padding;
-  margin-top:20px;
- 
-}
-.searchForm{
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  input[type="search"]{
-    outline: none !important;
-    width: 85%;
-    border-top-right-radius: 0px !important;
-    border-bottom-right-radius: 0px !important;
-  }
-  button{
-    background-color: #192E60;
-    width: 15%;
-    border-top-left-radius: 0px !important;
-    border-bottom-left-radius: 0px !important;
-  }
-  
-}
-.searchResult{
-  color:black;
-  padding:20px;
-  &:hover{
-    text-decoration: none;
-  }
-}
 
-/***End - Search page***/
+
+
+/************************************/

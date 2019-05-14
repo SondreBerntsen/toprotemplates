@@ -1,20 +1,16 @@
-/**********COLORS**********/
-/**********END - COLORS**********/
-/* fonts */
+/********** COLORS **********/
+/*********** FONTS **********/
 p {
-  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   line-height: 2rem;
 }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
   margin-bottom: 30px;
   font-weight: lighter;
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
   font-size: 1.6rem;
   font-weight: lighter;
@@ -22,18 +18,16 @@ h2 {
 }
 
 h3 {
-  font-family: "Open Sans", sans-serif;
   font-weight: lighter;
   font-size: 1.5rem;
 }
 
 h4 {
-  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
   font-weight: lighter;
 }
 
-/**********GENERAL**********/
+/********** GENERAL **********/
 body {
   font-family: "Open Sans", sans-serif;
   display: -webkit-box;
@@ -54,32 +48,11 @@ body main {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1050px;
   }
 }
 
-@media (min-width: 990px) {
-  .padding, footer, .totalDeliverySection, .valuesSection, .newsSection, .articleContainer {
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-}
-
-/*
-.padding{
-  padding-left:70px;
-  padding-right:70px;
-}
-
-@media (max-width:990px) {
-  .padding{
-    padding-left:5px;
-    padding-right:5px;
-  }
-}
-*/
 .navbar {
-  /*border-bottom: 1px solid gray;*/
   -webkit-box-shadow: 0px 15px 10px -20px #111;
           box-shadow: 0px 15px 10px -20px #111;
   background-color: white;
@@ -90,8 +63,8 @@ body main {
 }
 
 .navbar li {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
 }
 
 .navbar li .navbarLink {
@@ -99,7 +72,7 @@ body main {
   color: black !important;
 }
 
-.dropdown:hover > .dropdown-menu {
+.dropdown:hover .dropdown-menu {
   display: block;
 }
 
@@ -184,7 +157,7 @@ body main {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 100px;
   width: 100%;
   min-height: 150px;
   background-color: #192E60;
@@ -263,7 +236,6 @@ header .txtHeader .headertxtsub {
 }
 
 .servicesSection .serviceCatSection .serviceHeading {
-  font-size: 1.6rem;
   width: 300px;
   min-height: 60px;
   margin: auto;
@@ -283,7 +255,7 @@ header .txtHeader .headertxtsub {
 }
 
 .servicesSection .serviceCatSection .btnService:hover {
-  background-color: #3c5daa;
+  background-color: #22418a;
 }
 
 .totalDeliverySection {
@@ -293,15 +265,8 @@ header .txtHeader .headertxtsub {
   text-align: center;
 }
 
-.totalDeliverySection .subHeading {
-  font-weight: 400;
-  font-size: 1.6rem;
-  padding-bottom: 20px;
-}
-
 .totalDeliverySection .totaldeliveryTxt {
   margin: auto;
-  max-width: 900px;
 }
 
 .totalDeliverySection .imgMobileVisible {
@@ -312,7 +277,7 @@ header .txtHeader .headertxtsub {
   margin-top: 30px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .imgMobileVisible {
     display: none;
   }
@@ -325,41 +290,48 @@ header .txtHeader .headertxtsub {
 }
 
 .valuesSection {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .valuesSection .value {
-  padding: 20px;
+  position: relative;
+  margin-top: 30px;
 }
 
 .valuesSection .value img {
   /*fix*/
   width: 100%;
-  height: 250px;
+  height: 280px;
 }
 
 .valuesSection .value .valueHeading {
   font-size: 20px;
   text-align: center;
-  padding: 10px;
   color: black;
   position: absolute;
-  bottom: -10px;
-  left: 110px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: #e2e2e2;
-  min-width: 180px;
+  bottom: 20px;
+  right: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-width: 200px;
+  padding: 10px;
+  margin: 0px;
+}
+
+.valuesSection .value .valueIcon {
+  width: 40px;
+  height: 40px;
 }
 
 .newsSection {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .newsSection .newsArticleSection {
   margin-bottom: 30px;
-  position: relative;
+  padding-top: 30px;
   color: black;
+  max-width: 500px;
+  margin: auto;
 }
 
 .newsSection .newsArticleSection .newsSectionHeading {
@@ -378,7 +350,6 @@ header .txtHeader .headertxtsub {
 
 .newsSection .newsArticleSection hr {
   margin: 0;
-  border-color: #111;
 }
 
 .newsSection .newsArticleSection .dateNewsArticle {
@@ -387,8 +358,52 @@ header .txtHeader .headertxtsub {
 }
 
 /**********END - FRONT PAGE**********/
-/*******************************************************************************************************************/
-/***Sidebar***/
+/********** ARITCLE PAGES **********/
+.articleContainer {
+  margin-top: 30px;
+}
+
+.article {
+  line-height: 1.8;
+  padding-right: 50px;
+}
+
+@media (max-width: 990px) {
+  .article {
+    padding-right: 0px;
+  }
+}
+
+.breadcrumb {
+  background-color: white;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.serviceTagSection {
+  margin-top: 30px;
+}
+
+.serviceTagSection .serviceTag {
+  margin: 5px;
+  border-color: #192E60;
+  color: #192E60;
+}
+
+.serviceTagSection .serviceTag:hover {
+  background-color: #192E60;
+  color: white;
+}
+
+.articleEnglish {
+  margin: auto;
+}
+
+.headingTop {
+  margin-top: 30px;
+}
+
+/*****Sidebar*****/
 .sideNavbar {
   background-color: #e2e2e2;
   padding-bottom: 20px;
@@ -432,24 +447,11 @@ header .txtHeader .headertxtsub {
   background-color: lightgray;
 }
 
-@media (max-width: 1200px) {
-  .sideNavbar {
-    display: none;
-  }
-}
-
-/* Sidebar collapse */
-@media (min-width: 1200px) {
-  .openbtn, .overlaySidebar, .sideNavbarCollapse {
-    display: none;
-  }
-}
-
 .sideNavbarCollapse {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 1021;
   top: 0;
   left: 0px;
   background-color: #e2e2e2;
@@ -475,7 +477,7 @@ header .txtHeader .headertxtsub {
   background-color: rgba(0, 0, 0, 0.5);
   width: 0;
   height: 100vh;
-  z-index: 1;
+  z-index: 1021;
   position: fixed;
   top: 0;
   left: 0;
@@ -486,69 +488,268 @@ header .txtHeader .headertxtsub {
   margin-bottom: 20px;
 }
 
-/***End - Sidebar***/
-/***Article pages***/
-.articleContainer {
-  margin-top: 30px;
+@media (max-width: 1200px) {
+  .sideNavbar {
+    display: none;
+  }
 }
 
-.classtest {
-  font-weight: bold;
-  text-decoration: underline;
+/* Sidebar collapse */
+@media (min-width: 1200px) {
+  .openbtn, .overlaySidebar, .sideNavbarCollapse {
+    display: none;
+  }
 }
 
-.article {
-  line-height: 1.8;
-  padding-right: 50px;
-}
-
-/***End - Article pages***/
-/***Contact persons***/
-.contactSection {
+/****End - Sidebar*****/
+/***********End - ARITCLE PAGES**********/
+/*********** SEARCH PAGE ***********/
+.searchSection {
   margin-top: 20px;
 }
 
-.contactPerson {
+.searchForm {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.searchForm input[type="search"] {
+  outline: none !important;
+  width: 85%;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.searchForm button {
+  background-color: #192E60;
+  width: 15%;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.searchResult {
+  color: black;
+  padding: 20px;
+}
+
+.searchResult:hover {
+  text-decoration: none;
+}
+
+/***********End - SEARCH PAGE ***********/
+/********* CONTACT PAGE ********/
+.contactForm {
+  margin: auto;
+}
+
+.contactForm input, .contactForm select, .contactForm textarea {
+  border-radius: 0px;
+  background-color: rgba(238, 238, 238, 0.87);
+  border: none;
+}
+
+.contactForm input:active, .contactForm select:active, .contactForm textarea:active {
+  background-color: rgba(238, 238, 238, 0.87);
+}
+
+/*****Contact persons*****/
+.contactSection {
+  margin-top: 20px;
+}
+
+.contactPerson {
   margin-top: 30px;
-  max-width: 350px;
 }
 
 .contactPerson .contactImg {
   border-radius: 50%;
+  max-width: 150px;
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+
+.contactPerson .contactInfo {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+.contactPerson .contactInfo h4 {
+  margin-bottom: 0px;
+}
+
+.contactPerson .contactInfo p {
+  font-size: 14px;
+  color: gray;
+  margin: 5px;
 }
 
 .contactPerson button {
-  margin-top: 10px;
+  border: 1px solid lightgray;
 }
 
-/***End - contact persons****/
-.breadcrumb {
+.contactPerson button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/*****End - contact persons******/
+/*********End - CONTACT PAGE ********/
+/********* ERROR 404 **********/
+.errortitle {
+  font-size: 4rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.errortext {
+  font-size: 1.5rem;
+}
+
+.errorlink {
+  font-size: 1.5rem;
+}
+
+.errorimage {
+  max-width: 150px;
+  padding-top: 60px;
+}
+
+/***********End - ERROR 404 **********/
+/*********Customerstory*********/
+.sortYearSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sortYear {
+  margin-left: auto;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+}
+
+.sortYear:active {
+  border: none;
+}
+
+.sortYear option:hover {
+  border: none;
+  background-color: gray !important;
+  color: black;
+}
+
+.yearArchive:hover .dropdown-content, .yearArchive:active .dropdown-content {
+  display: block;
+}
+
+.yearArchive .button {
   background-color: white;
-  margin-top: 10px;
-  margin-left: 55px;
+  border: none;
+  border-bottom: 1px solid gray;
+  border-radius: 0;
+  cursor: pointer;
 }
 
-.serviceTagSection {
-  padding: 70px;
+.yearArchive .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 170px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-.serviceTagSection .serviceTag {
-  margin: 5px;
-  border-color: #192E60;
-  color: #192E60;
+.yearArchive .dropdown-content a {
+  display: block;
+  padding: 5px;
+  color: black;
 }
 
-.serviceTagSection .serviceTag:hover {
-  background-color: #192E60;
-  color: white;
+.yearArchive .dropdown-content a:hover {
+  background-color: #ececec;
+  text-decoration: none;
+}
+
+.customerStorySection {
+  position: relative;
+  margin-top: 30px;
+  overflow: hidden;
+  padding-bottom: 40%;
+}
+
+.customerStorySection a {
+  text-decoration: none;
+}
+
+.customerStoryImg {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.customerStoryContent {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  position: absolute;
+  width: 700px;
+  padding: 20px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.customerStoryContent .serviceHeadline {
+  font-size: 14px;
+  color: gray;
+  font-weight: bold;
+  margin: 0;
+}
+
+.customerStoryContent .serviceName {
+  font-size: 14px;
+  margin: 0;
+}
+
+.customerStoryContent:hover {
+  background-color: white;
+  color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .customerStorySection {
+    padding: 0px;
+  }
+  .customerStoryContent {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .customerStoryImg {
+    position: relative;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
