@@ -436,8 +436,13 @@ header{
   left: 0;
 }
 .expandbutton {
-  background-color: #0b1a2e;
+  background-color:$primary-color;
+  color:white;
   margin-bottom: 20px;
+  &:hover{
+    color:white;
+    background-color:rgb(34, 65, 138);
+  }
 }
 @media (max-width:1200px) {
   .sideNavbar{

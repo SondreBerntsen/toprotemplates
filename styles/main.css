@@ -484,8 +484,14 @@ header .txtHeader .headertxtsub {
 }
 
 .expandbutton {
-  background-color: #0b1a2e;
+  background-color: #192E60;
+  color: white;
   margin-bottom: 20px;
+}
+
+.expandbutton:hover {
+  color: white;
+  background-color: #22418a;
 }
 
 @media (max-width: 1200px) {
