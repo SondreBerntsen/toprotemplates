@@ -156,6 +156,14 @@ body main {
   }
 }
 
+#share-buttons img {
+  width: 35px;
+  padding: 5px;
+  border: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+}
+
 footer {
   margin-top: 100px;
   width: 100%;
@@ -656,6 +664,16 @@ header .txtHeader .headertxtsub {
   color: black;
 }
 
+.yearArchiveSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.yearArchive {
+  margin-left: auto;
+}
+
 .yearArchive:hover .dropdown-content, .yearArchive:active .dropdown-content {
   display: block;
 }
@@ -758,4 +776,6 @@ header .txtHeader .headertxtsub {
     left: 0%;
   }
 }
+
+/*******/
 /*# sourceMappingURL=main.css.map */
