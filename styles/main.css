@@ -309,7 +309,6 @@ header .txtHeader .headertxtsub {
 .valuesSection .value img {
   /*fix*/
   width: 100%;
-  height: 280px;
 }
 
 .valuesSection .value .valueHeading {
