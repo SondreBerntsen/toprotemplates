@@ -330,15 +330,13 @@ header .txtHeader .headertxtsub {
 }
 
 .newsSection {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .newsSection .newsArticleSection {
   margin-bottom: 30px;
   padding-top: 30px;
   color: black;
-  max-width: 500px;
-  margin: auto;
 }
 
 .newsSection .newsArticleSection .newsSectionHeading {
@@ -355,12 +353,13 @@ header .txtHeader .headertxtsub {
   width: 100%;
 }
 
-.newsSection .newsArticleSection hr {
-  margin: 0;
+.newsSection .dateNewsArticle {
+  font-size: 14px;
+  margin-bottom: 0px;
 }
 
-.newsSection .newsArticleSection .dateNewsArticle {
-  font-size: 14px;
+.newsSection hr {
+  margin-top: 0;
   margin-bottom: 5px;
 }
 
@@ -373,6 +372,10 @@ header .txtHeader .headertxtsub {
 .article {
   line-height: 1.8;
   padding-right: 50px;
+}
+
+.article .articleImg {
+  padding-bottom: 20px;
 }
 
 @media (max-width: 990px) {
@@ -393,6 +396,7 @@ header .txtHeader .headertxtsub {
 
 .serviceTagSection .serviceTag {
   margin: 5px;
+  margin-left: 0px;
   border-color: #192E60;
   color: #192E60;
 }
@@ -408,6 +412,10 @@ header .txtHeader .headertxtsub {
 
 .headingTop {
   margin-top: 30px;
+}
+
+#share-buttons {
+  margin-bottom: 20px;
 }
 
 /*****Sidebar*****/
@@ -441,7 +449,6 @@ header .txtHeader .headertxtsub {
 }
 
 .sidebarContent .sidebarLink {
-  white-space: nowrap;
   font-size: 15px;
   display: block;
   color: black;
@@ -521,6 +528,15 @@ header .txtHeader .headertxtsub {
   margin-top: 20px;
 }
 
+.searchSection .searchResultHeading {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.searchSection .searchForm {
+  margin-bottom: 30px;
+}
+
 .searchForm {
   margin-top: 50px;
   display: -webkit-box;
@@ -569,8 +585,21 @@ header .txtHeader .headertxtsub {
   border: none;
 }
 
-.contactForm input:active, .contactForm select:active, .contactForm textarea:active {
-  background-color: rgba(238, 238, 238, 0.87);
+.contactFormModal {
+  margin: auto;
+}
+
+.contactFormModal input, .contactFormModal select, .contactFormModal textarea {
+  border-radius: 0px;
+}
+
+.modaleTitle {
+  font-size: 1.3rem;
+  padding-left: 15px;
+}
+
+.modal-content {
+  border-radius: 0px !important;
 }
 
 /*****Contact persons*****/
@@ -593,7 +622,7 @@ header .txtHeader .headertxtsub {
 .contactPerson .contactInfo {
   display: block;
   text-align: center;
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .contactPerson .contactInfo h4 {
@@ -639,30 +668,6 @@ header .txtHeader .headertxtsub {
 
 /***********End - ERROR 404 **********/
 /*********Customerstory*********/
-.sortYearSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.sortYear {
-  margin-left: auto;
-  width: 200px;
-  border: none;
-  border-bottom: 1px solid gray;
-  font-size: 18px;
-}
-
-.sortYear:active {
-  border: none;
-}
-
-.sortYear option:hover {
-  border: none;
-  background-color: gray !important;
-  color: black;
-}
-
 .yearArchiveSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -706,18 +711,18 @@ header .txtHeader .headertxtsub {
   text-decoration: none;
 }
 
-.customerStorySection {
+.largeThumbnailSection {
   position: relative;
   margin-top: 30px;
   overflow: hidden;
   padding-bottom: 40%;
 }
 
-.customerStorySection a {
+.largeThumbnailSection a {
   text-decoration: none;
 }
 
-.customerStoryImg {
+.largeThumbnail {
   width: 100%;
   height: auto;
   margin: auto;
@@ -728,7 +733,7 @@ header .txtHeader .headertxtsub {
   right: 0;
 }
 
-.customerStoryContent {
+.largeThumbnailContent {
   background: rgba(255, 255, 255, 0.9);
   color: black;
   position: absolute;
@@ -738,28 +743,32 @@ header .txtHeader .headertxtsub {
   right: 20px;
 }
 
-.customerStoryContent .serviceHeadline {
+.largeThumbnailContent .serviceHeadline {
   font-size: 14px;
   color: gray;
   font-weight: bold;
   margin: 0;
 }
 
-.customerStoryContent .serviceName {
+.largeThumbnailContent .serviceName {
   font-size: 14px;
   margin: 0;
 }
 
-.customerStoryContent:hover {
+.largeThumbnailContent:hover {
   background-color: white;
   color: black;
 }
 
+.smallThumbnailNews {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
-  .customerStorySection {
+  .largeThumbnailSection {
     padding: 0px;
   }
-  .customerStoryContent {
+  .largeThumbnailContent {
     position: relative;
     width: 100%;
     bottom: 0px;
@@ -767,12 +776,21 @@ header .txtHeader .headertxtsub {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .customerStoryImg {
+  .largeThumbnail {
     position: relative;
     top: 0%;
     right: 0%;
     bottom: 0%;
     left: 0%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .smallThumbnailNews {
+    display: block;
+  }
+  .largeThumbnailNews {
+    display: none;
   }
 }
 

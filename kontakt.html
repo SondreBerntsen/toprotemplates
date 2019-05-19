@@ -107,16 +107,13 @@
 
 
             <form class="contactForm col-lg-10">
-
                 <div class="row">
                     <div class="col form-group">
-
                         <input type="text" class="form-control" id="nameInput" placeholder="Navn...">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col form-group">
-
                         <input type="email" class="form-control" id="emailInput" placeholder="Epost...">
                     </div>
                 </div>
@@ -153,27 +150,27 @@
             <section class="contactSection row">
                 <h1 class="ContactSubtitle col-12 text-center">Møt Teamet</h1>
 
-                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                <section class="contactPerson col-md-6 col-lg-4 ">
                     <img class="contactImg img-fluid" src="images/contactImg.PNG" />
                     <div class="contactInfo">
-                        <h4>Liam Hemsworth</h4>
-                        <p>Salgssjef elektronikk</p>
+                        <h4>Liam Hemsworth hghghghghgh Løkken</h4>
+                        <p>Salgsingeniør elektronikkproduksjon n ndll</p>
                         <button class="btn btn-sm" data-toggle="modal" data-target="#contactModal"><img
                                 class="img-fluid" src="images/icons/mailIcon.png" />Send
                             E-post</button>
                     </div>
                 </section>
-                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                <section class="contactPerson col-md-6 col-lg-4 ">
                     <img class="contactImg img-fluid" src="images/sondre.PNG" />
                     <div class="contactInfo">
-                        <h4>Liam Hemsworth</h4>
-                        <p>Salgssjef elektronikk</p>
+                        <h4>Liam Hemsworth ghghhghghghr Løkken</h4>
+                        <p>Salgssjef elektronikk og masse annet</p>
                         <button class="btn btn-sm" data-toggle="modal" data-target="#contactModal"><img
                                 class="img-fluid" src="images/icons/mailIcon.png" />Send
                             E-post</button>
                     </div>
                 </section>
-                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                <section class="contactPerson col-md-6 col-lg-4 ">
                     <img class="contactImg img-fluid" src="images/mads.PNG" />
                     <div class="contactInfo">
                         <h4>Liam Hemsworth</h4>
@@ -183,7 +180,7 @@
                             E-post</button>
                     </div>
                 </section>
-                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                <section class="contactPerson col-md-6 col-lg-4 ">
                     <img class="contactImg img-fluid" src="images/elisabeth.PNG" />
                     <div class="contactInfo">
                         <h4>Liam Hemsworth</h4>
@@ -193,7 +190,7 @@
                             E-post</button>
                     </div>
                 </section>
-                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                <section class="contactPerson col-md-6 col-lg-4 ">
                     <img class="contactImg img-fluid" src="images/contactImg.PNG" />
                     <div class="contactInfo">
                         <h4>Liam Hemsworth</h4>
@@ -203,7 +200,7 @@
                             E-post</button>
                     </div>
                 </section>
-                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                <section class="contactPerson col-md-6 col-lg-4 ">
                     <img class="contactImg img-fluid" src="images/sondre.PNG" />
                     <div class="contactInfo">
                         <h4>Liam Hemsworth</h4>
@@ -213,7 +210,7 @@
                             E-post</button>
                     </div>
                 </section>
-                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                <section class="contactPerson col-md-6 col-lg-4 ">
                     <img class="contactImg img-fluid" src="images/mads.PNG" />
                     <div class="contactInfo">
                         <h4>Liam Hemsworth</h4>
@@ -223,7 +220,7 @@
                             E-post</button>
                     </div>
                 </section>
-                <section class="contactPerson col-md-6 col-lg-4 col-xl-3">
+                <section class="contactPerson col-md-6 col-lg-4">
                     <img class="contactImg img-fluid" src="images/elisabeth.PNG" />
                     <div class="contactInfo">
                         <h4>Liam Hemsworth</h4>
@@ -237,7 +234,51 @@
 
         </div>
     </main>
-
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalContactID">
+        Launch demo modal
+    </button>
+    <div class="modal fade" id="modalContactID" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title modaleTitle">Kontakt</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="contactFormModal col-lg-12">
+                        <div class="row">
+                            <div class="col form-group">
+                                <input type="text" class="form-control" id="nameInput" placeholder="Navn...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col form-group">
+                                <input type="email" class="form-control" id="emailInput" placeholder="Epost...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col form-group">
+                                <input type="text" class="form-control" id="phoneInput" placeholder="Telefonnummer">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col form-group">
+                                <textarea type="text" rows="5" class="form-control textarea"
+                                    placeholder="Melding..."></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-success float-right">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container">
             <div class="row">

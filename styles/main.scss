@@ -301,13 +301,12 @@ header{
   }
 }
 .newsSection{
-  margin-top: 60px;
+  margin-top: 30px;
   .newsArticleSection{
     margin-bottom: 30px;
     padding-top: 30px;
     color:black;
-    max-width: 500px;
-    margin:auto;
+    
     .newsSectionHeading{
       font-size: 1.3rem;
       margin-bottom: 10px;
@@ -319,13 +318,14 @@ header{
     .newsThumbnail{
       width: 100%;
     }
-    hr{
-      margin: 0; 
-    }
-    .dateNewsArticle{
-      font-size: 14px;
-      margin-bottom: 5px;
-    }
+  }
+  .dateNewsArticle{
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  hr{
+    margin-top: 0;
+    margin-bottom:5px; 
   }
 }
 /**********END - FRONT PAGE**********/
@@ -339,6 +339,9 @@ header{
  .article{
    line-height: 1.8;
    padding-right:50px;
+   .articleImg{
+    padding-bottom: 20px;
+   }
  }
  @media (max-width:990px) {
   .article{
@@ -354,6 +357,7 @@ header{
   margin-top:30px;
   .serviceTag{
     margin: 5px;
+    margin-left:0px;
     border-color: $primary-color;
     color:$primary-color;
     &:hover {
@@ -367,6 +371,9 @@ header{
 }
 .headingTop{
   margin-top: 30px;
+}
+#share-buttons{
+  margin-bottom: 20px;
 }
 /*****Sidebar*****/
 
@@ -398,7 +405,6 @@ header{
     border-color: rgb(182, 179, 179);
   }
   .sidebarLink{
-    white-space: nowrap;
     font-size: 15px;
     display: block;
     color:black;
@@ -474,7 +480,13 @@ header{
 
 .searchSection{
   margin-top:20px;
- 
+  .searchResultHeading{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .searchForm{
+    margin-bottom:30px;
+  }
 }
 .searchForm{
   margin-top: 50px;
@@ -514,10 +526,20 @@ header{
     border-radius: 0px;
     background-color: rgba(238, 238, 238, 0.87);
     border:none;
-    &:active{
-      background-color: rgba(238, 238, 238, 0.87);
-    }
   }
+}
+.contactFormModal{
+  margin:auto;
+  input, select, textarea{
+    border-radius: 0px;
+  }
+}
+.modaleTitle{
+  font-size: 1.3rem;
+  padding-left:15px;
+}
+.modal-content{
+  border-radius: 0px !important;
 }
 /*****Contact persons*****/
 .contactSection{
@@ -535,7 +557,7 @@ header{
   .contactInfo{
     display: block;
     text-align: center;
-    padding:20px;
+    padding-top:20px;
     h4{
       margin-bottom: 0px;
     }
@@ -578,27 +600,7 @@ header{
 
 /*********Customerstory*********/
 
-.sortYearSection{
-  display: flex;
-  
-}
-.sortYear{
-  margin-left: auto;
-  width: 200px;
-  border:none;
-  border-bottom:1px solid gray;
-  font-size: 18px;
-  &:active{
-    border:none;
-  }
-  option{
-    &:hover{
-      border:none;
-      background-color: gray !important;
-      color:black;
-    }
-  }
-}
+
 .yearArchiveSection{
   display: flex;
 }
@@ -635,7 +637,7 @@ header{
     }
   }
 
-.customerStorySection{
+.largeThumbnailSection{
   position: relative;
   margin-top:30px;
   overflow: hidden;
@@ -644,7 +646,7 @@ header{
     text-decoration: none;
   }
 }
-.customerStoryImg{
+.largeThumbnail{
   width: 100%;
   height: auto;
   margin: auto;
@@ -654,7 +656,7 @@ header{
   left: 0; 
   right: 0;
 }
-.customerStoryContent{
+.largeThumbnailContent{
   background:rgba(255,255,255,0.9);
   color:black;
   position: absolute;
@@ -662,7 +664,6 @@ header{
   padding:20px;
   bottom:20px;
   right:20px;
-  //box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   .serviceHeadline{
     font-size: 14px;
     color:gray;
@@ -678,21 +679,23 @@ header{
     color:black;
   }
 }
-
+.smallThumbnailNews{
+  display:none;
+}
 @media only screen and (max-width: 1200px) {
-  .customerStorySection{
+  .largeThumbnailSection{
     padding: 0px;
   }
-  .customerStoryContent{
+  .largeThumbnailContent{
     position: relative;
     width: 100%;
     bottom:0px;
     right:0px;
     padding-left:0px;
     padding-right:0px;
- 
+
   }
-  .customerStoryImg{
+  .largeThumbnail{
     position: relative;
     top: 0%;
     right: 0%;
@@ -700,5 +703,12 @@ header{
     left: 0%;
   }
 }
-
+@media only screen and (max-width: 768px) {
+  .smallThumbnailNews{
+    display:block;
+  }
+  .largeThumbnailNews{
+    display:none;
+  }
+}
 /*******/
