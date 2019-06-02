@@ -20,29 +20,24 @@ p {
     font-size: $font-sizep;
     line-height: $line-height1;
 }
-
 h1 {
     margin-bottom: $h1space;
     font-weight: lighter;
 }
-
 h2 {
     margin-bottom: $h2space;
     font-size: $font-size2;
     font-weight: lighter;
     line-height: 2.3rem;
 }
-
 h3 {
     font-weight: lighter;
     font-size: $font-size3;
 }
-
 h4 {
     font-size: $font-size4;
     font-weight: lighter;
 }
-
 /********** GENERAL **********/
 body {
     font-family: $fontfamily;
@@ -61,8 +56,10 @@ body {
 }
 
 .navbar {
-  box-shadow: 0px 15px 10px -20px #111;
+  box-shadow: 0 0 5px 1px rgba(133, 133, 133, 0.51);
   background-color: white;
+  padding-top:0px;
+  padding-bottom:0px;
   .logoImg{
     height: 50px;
   }
@@ -72,29 +69,57 @@ body {
     .navbarLink {
       font-size: 1rem;
       color:black !important;
+      padding-top:26px;
+      padding-bottom:26px;
+    }
+    .navbarLink {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .activeNavbar{
+      text-decoration: underline;
     }
   }
 }
-.dropdown:hover{
-  .dropdown-menu {
-    display: block;
+@media (max-width: 991px) {
+  .navbar {
+      overflow: auto;
+      max-height: 85vh;
+      align-items: flex-start;
   }
 }
+
 .dropdownSection{
   border-radius: 0px;
+  margin-top:0px;
+  border:none;
+  background-color: rgb(245, 245, 245);
   .dropdown-item{
-    &:active{
+    &:hover{
       background-color: $secondary-color;
       color:black;
     }
   }
 }
+.dropdown{
+  &:hover{
+    background-color: rgb(245, 245, 245);
+    color:black;
+    .navbarLink{
+      text-decoration: none !important;
+    }
+    
+  }
+}
 .iconSearch{
   height: 25px;
-  cursor: pointer;
 }
 .iconSearch2{
   display: none;
+}
+.iconSearch1{
+  margin-top:20px;
 }
 .searchbar{
   transition: none !important;
@@ -125,7 +150,37 @@ body {
     
   }
 }
+@media (min-width:990px){
+  .dropdown:hover{
+    .dropdown-menu {
+      display: block;
+    }
+  }
+}
 @media (max-width:990px) {
+  .navbar{
+    padding-top:10px;
+    padding-bottom:10px;
+    li {
+      .navbarLink {
+        padding-top:10px;
+        padding-bottom:10px;
+      }
+    }
+  }
+  .dropdown{
+    &:hover{
+      background-color: white;
+    }
+  }
+  .dropdownSection{
+    background-color: white;
+    .dropdown-item{
+      &:hover{
+        background-color: rgb(231, 231, 231);
+      }
+    }
+  }
   .searchbar{
     width: 100%;
     padding: 15px;
@@ -143,6 +198,7 @@ body {
   .iconSearch2{
     display: inline-block;
     margin-right:10px;
+    
   }
 }
 #share-buttons {
@@ -152,6 +208,9 @@ body {
     border: 0;
     box-shadow: 0;
   }
+}
+.closeButton{
+  border: none;
 }
 footer{
   margin-top: 100px;
@@ -276,11 +335,17 @@ header{
 }
 .valuesSection{
   margin-top: 60px;
+  margin-bottom: 60px;
   .value{
     position: relative; 
     margin-top:30px;
-    img{/*fix*/
+    
+    img{
       width: 100%;
+      border:1px solid lightgray;
+      &:hover{
+        box-shadow: 1px 1px 4px 1px rgb(190, 190, 190);                                 
+      }
     }
     .valueHeading{
       font-size: 20px;
@@ -294,23 +359,36 @@ header{
       padding:10px;
       margin:0px; 
     }
-    .valueIcon{
-      width: 40px;
-      height: 40px;;
-    }
   }
 }
 .newsSection{
-  margin-top: 30px;
   .newsArticleSection{
     margin-bottom: 30px;
-    padding-top: 30px;
+    margin-top: 30px;
     color:black;
     
-    .newsSectionHeading{
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      margin-top: 10px;
+    .newsCardContent{
+      border:1px solid lightgray;
+      .newsCardTxt{
+        margin-left:10px;
+        margin-right:10px;
+        .newsSectionHeading{
+          font-size: 1.3rem;
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+        .dateNewsArticle{
+          font-size: 14px;
+          margin-bottom: 0px;
+        }
+        hr{
+          margin-top: 0;
+          margin-bottom:5px; 
+        }
+      }
+      &:hover{
+        box-shadow: 1px 1px 4px 1px rgb(190, 190, 190);
+      }
     }
     &:hover {
       text-decoration: none;
@@ -319,18 +397,10 @@ header{
       width: 100%;
     }
   }
-  .dateNewsArticle{
-    font-size: 14px;
-    margin-bottom: 0px;
-  }
-  hr{
-    margin-top: 0;
-    margin-bottom:5px; 
-  }
+
+
 }
 /**********END - FRONT PAGE**********/
-
-
 
 /********** ARITCLE PAGES **********/
 .articleContainer{
@@ -345,7 +415,7 @@ header{
  }
  @media (max-width:990px) {
   .article{
-    padding-right:0px;
+    padding-right:15px;
   }
 }
  .breadcrumb{
@@ -396,13 +466,15 @@ header{
     padding-left: 20px;
     padding-right: 20px;
     font-weight: bolder;
-
   }
   .hrSidebar{
     margin: 0;
     margin-left: 20px;
     margin-right: 20px;
     border-color: rgb(182, 179, 179);
+  }
+  .activeSidebar{
+    background-color: lightgray;
   }
   .sidebarLink{
     font-size: 15px;
@@ -449,21 +521,29 @@ header{
   left: 0;
 }
 .expandbutton {
-  background-color:$primary-color;
+  background-color: rgb(34, 65, 138);
   color:white;
   margin-bottom: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
   &:hover{
     color:white;
-    background-color:rgb(34, 65, 138);
+    background-color:rgb(62, 101, 190);
   }
 }
-@media (max-width:1200px) {
+@media (max-width: 991px) {
   .sideNavbar{
     display: none;
   }
+  aside{
+    .contactSection {
+      display: none;
+    }
+  }
 }
 /* Sidebar collapse */
-@media (min-width:1200px) {
+@media (min-width:991px) {
   .openbtn,.overlaySidebar, .sideNavbarCollapse {
     display: none;
   }
@@ -472,8 +552,6 @@ header{
 /****End - Sidebar*****/
 
 /***********End - ARITCLE PAGES**********/
-
-
 
 
 /*********** SEARCH PAGE ***********/
@@ -505,7 +583,6 @@ header{
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
   }
-  
 }
 .searchResult{
   color:black;
@@ -517,8 +594,11 @@ header{
 
 /***********End - SEARCH PAGE ***********/
 
- 
 /********* CONTACT PAGE ********/
+.contactTxt{
+  margin: auto;
+  margin-bottom:30px;
+}
 
 .contactForm{
   margin:auto;
@@ -530,6 +610,7 @@ header{
 }
 .contactFormModal{
   margin:auto;
+  text-align: left;
   input, select, textarea{
     border-radius: 0px;
   }
@@ -567,12 +648,8 @@ header{
       margin:5px;
     }
   }
-  button{
-   border:1px solid lightgray;
-   img{
-     width: 20px;
-     margin-right: 10px;
-   }
+  .buttonBorder{
+    border:1px solid lightgray;
   }
 }
 /*****End - contact persons******/
@@ -598,8 +675,7 @@ header{
 }
 /***********End - ERROR 404 **********/
 
-/*********Customerstory*********/
-
+/*********Customerstory and News*********/
 
 .yearArchiveSection{
   display: flex;
@@ -636,7 +712,11 @@ header{
       }
     }
   }
-
+.largeThumbnailLink{
+  &:hover{
+    text-decoration: none;
+  }
+}
 .largeThumbnailSection{
   position: relative;
   margin-top:30px;
@@ -711,4 +791,4 @@ header{
     display:none;
   }
 }
-/*******/
+/*********End - Customerstory and News*********/

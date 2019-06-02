@@ -53,9 +53,11 @@ body main {
 }
 
 .navbar {
-  -webkit-box-shadow: 0px 15px 10px -20px #111;
-          box-shadow: 0px 15px 10px -20px #111;
+  -webkit-box-shadow: 0 0 5px 1px rgba(133, 133, 133, 0.51);
+          box-shadow: 0 0 5px 1px rgba(133, 133, 133, 0.51);
   background-color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .navbar .logoImg {
@@ -70,28 +72,59 @@ body main {
 .navbar li .navbarLink {
   font-size: 1rem;
   color: black !important;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
+.navbar li .navbarLink:hover {
+  text-decoration: underline;
+}
+
+.navbar li .activeNavbar {
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    overflow: auto;
+    max-height: 85vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .dropdownSection {
   border-radius: 0px;
+  margin-top: 0px;
+  border: none;
+  background-color: whitesmoke;
 }
 
-.dropdownSection .dropdown-item:active {
+.dropdownSection .dropdown-item:hover {
   background-color: #e2e2e2;
   color: black;
 }
 
+.dropdown:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.dropdown:hover .navbarLink {
+  text-decoration: none !important;
+}
+
 .iconSearch {
   height: 25px;
-  cursor: pointer;
 }
 
 .iconSearch2 {
   display: none;
+}
+
+.iconSearch1 {
+  margin-top: 20px;
 }
 
 .searchbar {
@@ -134,7 +167,30 @@ body main {
   border-bottom-left-radius: 0px !important;
 }
 
+@media (min-width: 990px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
 @media (max-width: 990px) {
+  .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar li .navbarLink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .dropdown:hover {
+    background-color: white;
+  }
+  .dropdownSection {
+    background-color: white;
+  }
+  .dropdownSection .dropdown-item:hover {
+    background-color: #e7e7e7;
+  }
   .searchbar {
     width: 100%;
     padding: 15px;
@@ -162,6 +218,10 @@ body main {
   border: 0;
   -webkit-box-shadow: 0;
           box-shadow: 0;
+}
+
+.closeButton {
+  border: none;
 }
 
 footer {
@@ -299,6 +359,7 @@ header .txtHeader .headertxtsub {
 
 .valuesSection {
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .valuesSection .value {
@@ -307,8 +368,13 @@ header .txtHeader .headertxtsub {
 }
 
 .valuesSection .value img {
-  /*fix*/
   width: 100%;
+  border: 1px solid lightgray;
+}
+
+.valuesSection .value img:hover {
+  -webkit-box-shadow: 1px 1px 4px 1px #bebebe;
+          box-shadow: 1px 1px 4px 1px #bebebe;
 }
 
 .valuesSection .value .valueHeading {
@@ -324,25 +390,40 @@ header .txtHeader .headertxtsub {
   margin: 0px;
 }
 
-.valuesSection .value .valueIcon {
-  width: 40px;
-  height: 40px;
-}
-
-.newsSection {
-  margin-top: 30px;
-}
-
 .newsSection .newsArticleSection {
   margin-bottom: 30px;
-  padding-top: 30px;
+  margin-top: 30px;
   color: black;
 }
 
-.newsSection .newsArticleSection .newsSectionHeading {
+.newsSection .newsArticleSection .newsCardContent {
+  border: 1px solid lightgray;
+}
+
+.newsSection .newsArticleSection .newsCardContent .newsCardTxt {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.newsSection .newsArticleSection .newsCardContent .newsCardTxt .newsSectionHeading {
   font-size: 1.3rem;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+.newsSection .newsArticleSection .newsCardContent .newsCardTxt .dateNewsArticle {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.newsSection .newsArticleSection .newsCardContent .newsCardTxt hr {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.newsSection .newsArticleSection .newsCardContent:hover {
+  -webkit-box-shadow: 1px 1px 4px 1px #bebebe;
+          box-shadow: 1px 1px 4px 1px #bebebe;
 }
 
 .newsSection .newsArticleSection:hover {
@@ -351,16 +432,6 @@ header .txtHeader .headertxtsub {
 
 .newsSection .newsArticleSection .newsThumbnail {
   width: 100%;
-}
-
-.newsSection .dateNewsArticle {
-  font-size: 14px;
-  margin-bottom: 0px;
-}
-
-.newsSection hr {
-  margin-top: 0;
-  margin-bottom: 5px;
 }
 
 /**********END - FRONT PAGE**********/
@@ -380,7 +451,7 @@ header .txtHeader .headertxtsub {
 
 @media (max-width: 990px) {
   .article {
-    padding-right: 0px;
+    padding-right: 15px;
   }
 }
 
@@ -448,6 +519,10 @@ header .txtHeader .headertxtsub {
   border-color: #b6b3b3;
 }
 
+.sidebarContent .activeSidebar {
+  background-color: lightgray;
+}
+
 .sidebarContent .sidebarLink {
   font-size: 15px;
   display: block;
@@ -498,24 +573,30 @@ header .txtHeader .headertxtsub {
 }
 
 .expandbutton {
-  background-color: #192E60;
+  background-color: #22418a;
   color: white;
   margin-bottom: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
 }
 
 .expandbutton:hover {
   color: white;
-  background-color: #22418a;
+  background-color: #3e65be;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   .sideNavbar {
+    display: none;
+  }
+  aside .contactSection {
     display: none;
   }
 }
 
 /* Sidebar collapse */
-@media (min-width: 1200px) {
+@media (min-width: 991px) {
   .openbtn, .overlaySidebar, .sideNavbarCollapse {
     display: none;
   }
@@ -575,6 +656,11 @@ header .txtHeader .headertxtsub {
 
 /***********End - SEARCH PAGE ***********/
 /********* CONTACT PAGE ********/
+.contactTxt {
+  margin: auto;
+  margin-bottom: 30px;
+}
+
 .contactForm {
   margin: auto;
 }
@@ -587,6 +673,7 @@ header .txtHeader .headertxtsub {
 
 .contactFormModal {
   margin: auto;
+  text-align: left;
 }
 
 .contactFormModal input, .contactFormModal select, .contactFormModal textarea {
@@ -635,13 +722,8 @@ header .txtHeader .headertxtsub {
   margin: 5px;
 }
 
-.contactPerson button {
+.contactPerson .buttonBorder {
   border: 1px solid lightgray;
-}
-
-.contactPerson button img {
-  width: 20px;
-  margin-right: 10px;
 }
 
 /*****End - contact persons******/
@@ -667,7 +749,7 @@ header .txtHeader .headertxtsub {
 }
 
 /***********End - ERROR 404 **********/
-/*********Customerstory*********/
+/*********Customerstory and News*********/
 .yearArchiveSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,6 +790,10 @@ header .txtHeader .headertxtsub {
 
 .yearArchive .dropdown-content a:hover {
   background-color: #ececec;
+  text-decoration: none;
+}
+
+.largeThumbnailLink:hover {
   text-decoration: none;
 }
 
@@ -794,5 +880,5 @@ header .txtHeader .headertxtsub {
   }
 }
 
-/*******/
+/*********End - Customerstory and News*********/
 /*# sourceMappingURL=main.css.map */
